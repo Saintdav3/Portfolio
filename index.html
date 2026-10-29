@@ -3,14 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dave (Xaint.XQL) | Full Stack Developer</title>
-    <meta name="description" content="Dave builds clean, modern websites and web apps, from design to deployed product." />
+    <title>Xaint.XQL | Full Stack Developer</title>
+    <meta name="description" content="Xaint.XQL builds clean, modern websites and web apps, from design to deployed product." />
+    <link rel="icon" href="Assets/images/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="Assets/images/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/images/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/images/favicon-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="Assets/images/apple-touch-icon.png" />
+    <meta name="theme-color" content="#141210" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Inter+Tight:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="Assets/vendor/Font awesome/css/all.css" />
-    <link rel="stylesheet" href="Assets/css/style.css?v=20261029b" />
-    <link rel="stylesheet" href="Assets/css/layout.css?v=20261029b" />
+    <link rel="stylesheet" href="Assets/css/style.css?v=20261029e" />
+    <link rel="stylesheet" href="Assets/css/layout.css?v=20261029e" />
     <script>
       try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
     </script>
@@ -18,7 +24,7 @@
   <body>
     <header class="site-nav" id="top">
       <div class="wrap">
-        <a href="index.html" class="pill brand"><img class="avatar" src="Assets/images/me-head.jpg" alt="" /> Dave · Xaint.XQL</a>
+        <a href="index.html" class="pill brand">Xaint.XQL</a>
         <nav class="pill nav-links" aria-label="Primary">
           <a href="index.html#work">Work</a>
           <a href="playground.html">Playground</a>
@@ -48,7 +54,18 @@
             </div>
           </div>
           <div class="hero2-art">
-            <figure class="photo-card"><img src="Assets/images/me-portrait.jpg" alt="Portrait of Dave" /><figcaption>Dave · Abuja, NG</figcaption></figure>
+            <div class="term-card" role="img" aria-label="Terminal window: whoami returns full stack developer, ls stack lists html css js react tailwind node, ship --fast reports live in production">
+              <div class="term-bar"><span class="d r"></span><span class="d y"></span><span class="d g"></span><span class="term-title">xaint — zsh</span></div>
+              <div class="term-body" aria-hidden="true">
+                <p class="t-line" style="--d: .5s"><span class="ps">xaint@abuja</span><span class="sep">:~$</span> whoami</p>
+                <p class="t-line out" style="--d: 1.1s">full stack developer</p>
+                <p class="t-line" style="--d: 1.8s"><span class="ps">xaint@abuja</span><span class="sep">:~$</span> ls stack/</p>
+                <p class="t-line out" style="--d: 2.4s">html&nbsp; css&nbsp; js&nbsp; react&nbsp; tailwind&nbsp; node</p>
+                <p class="t-line" style="--d: 3.1s"><span class="ps">xaint@abuja</span><span class="sep">:~$</span> ./ship --fast</p>
+                <p class="t-line out ok" style="--d: 3.7s">✓ live in production</p>
+                <p class="t-line" style="--d: 4.3s"><span class="ps">xaint@abuja</span><span class="sep">:~$</span> <span class="caret"></span></p>
+              </div>
+            </div>
             <div class="critter c1"><i></i></div>
           <div class="critter c2"><i></i></div>
           <div class="critter c3"><i></i></div>
@@ -181,6 +198,6 @@
         try { localStorage.setItem("theme", next); } catch (e) {}
       });
     </script>
-    <script src="Assets/Js/site.js?v=20261029b"></script>
+    <script src="Assets/Js/site.js?v=20261029e"></script>
   </body>
 </html>
