@@ -3,214 +3,316 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About | Xaint.XQL</title>
-    <link rel="stylesheet" href="Assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="Assets/css/style.css" />
-    <link rel="stylesheet" href="Assets/vendor/Font awesome/css/all.css" />
+    <title>About | Dave (Xaint.XQL)</title>
+    <meta name="description" content="A little about Dave: a full stack developer based in Abuja who designs and ships." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Geist+Mono:wght@400;500;600&family=Inter+Tight:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="Assets/vendor/Font awesome/css/all.css" />
+    <link rel="stylesheet" href="Assets/css/style.css" />
+    <script>
+      try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+    </script>
   </head>
-  <body class="about-page-body">
-    <header class="floating-nav-wrap mt-3">
-      <a href="index.html#home" class="floating-chip brand-chip">Xaint.XQL</a>
-
-      <nav class="floating-nav">
-        <ul class="nav-links">
-          <li><a href="index.html#home">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="about.html" class="active" aria-current="page">About</a></li>
-        </ul>
-      </nav>
-
-      <a href="contact.html" class="floating-chip contact-chip" aria-label="Contact page">
-        <i class="fa-regular fa-comment"></i>
-      </a>
+  <body>
+    <header class="site-nav">
+      <div class="wrap">
+        <a href="index.html" class="pill brand"><img class="avatar" src="Assets/images/me-head.jpg" alt="" /> Dave · Xaint.XQL</a>
+        <nav class="pill nav-links" aria-label="Primary">
+          <a href="index.html#work">Work</a>
+          <a href="playground.html">Playground</a>
+          <a href="about.html" aria-current="page" style="color: var(--primary)">About</a>
+        </nav>
+        <div class="nav-right">
+          <button class="pill icon-pill" id="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-circle-half-stroke"></i></button>
+          <a href="mailto:hello@xaintxql.com" class="pill email-pill">hello@xaintxql.com</a>
+        </div>
+      </div>
     </header>
 
-    <main class="about-page-shell">
+    <main>
       <section class="about-hero">
-        <div class="about-hero-copy">
-          <p class="section-label">About Me</p>
-          <h1>I am Dave, the designer behind Xaint.XQL<span class="accent-dot">.</span></h1>
-          <p>
-            I am a creative designer and frontend-focused builder who cares deeply
-            about clarity, visual storytelling, and turning ideas into polished web
-            experiences that people actually enjoy using.
-          </p>
-          <p>
-            My work sits at the intersection of design taste and implementation.
-            I love shaping how things look, how they flow, and how they feel when
-            someone finally lands on the page.
-          </p>
+        <div class="wrap">
+          <h1 class="about-title">
+            A little<img class="h-icon title-star" src="Assets/images/pixel/star.svg" alt="" aria-hidden="true" /><br />
+            <span class="photo-line"><span class="photo-tile"><img src="Assets/images/me-head.jpg" alt="Portrait of Dave" /><img class="h-icon tile-cursor" src="Assets/images/pixel/cursor.svg" alt="" aria-hidden="true" /></span>about me</span>
+          </h1>
+          <p class="about-sub">I'm Dave, a Full Stack Developer based in Abuja.</p>
         </div>
+      </section>
 
-        <div class="about-hero-visual">
-          <div class="about-portrait-frame">
-            <img
-              src="Assets/images/Gemini_Generated_Image_roxuctroxuctroxu.png"
-              alt="Portrait of Dave"
-              class="about-portrait"
-            />
+      <section>
+        <div class="wrap">
+          <h2 class="qa-title"><img class="h-icon " src="Assets/images/pixel/chat.svg" alt="" aria-hidden="true" />Ask me anything</h2>
+          <div class="qa">
+            <div class="qa-row" style="--c: #8fb0e8">
+              <div class="critter" style="--c: var(--red)"><i></i></div>
+              <h3 class="qa-q">What kind of work do you like doing?</h3>
+              <p class="qa-a">I care about clarity, visual storytelling and turning ideas into polished web experiences people actually enjoy using. I love shaping how something looks, how it flows, and how it feels when someone lands on the page.</p>
+            </div>
+            <div class="qa-row" style="--c: var(--yellow)">
+              <div class="critter" style="--c: var(--green); --br: 10px"><i></i></div>
+              <h3 class="qa-q">How did you get started?</h3>
+              <p class="qa-a">I started with a strong curiosity for how digital products look and communicate. What pulled me in was not just code, but how good design can make something feel obvious, engaging and memorable. That curiosity became a process: hierarchy, spacing, typography, color and interaction as one system, not isolated details.</p>
+            </div>
+            <div class="qa-row" style="--c: var(--purple)">
+              <div class="critter" style="--c: var(--orange); --br: 10px"><i></i></div>
+              <h3 class="qa-q">Do you build things too, or only design them?</h3>
+              <p class="qa-a">Both. I'm a full stack developer, so I design with implementation in mind and what gets approved is what actually ships. I work across frontend and backend, from the first wireframe to a deployed product.</p>
+            </div>
+            <div class="qa-row" style="--c: var(--green)">
+              <div class="critter" style="--c: var(--purple)"><i></i></div>
+              <h3 class="qa-q light">What do you care about most in the work?</h3>
+              <p class="qa-a">I approach design with both emotion and structure. I want an interface to feel beautiful, but I also want it to solve a problem, guide attention and support a clear goal. A strong first impression matters, and so does whether it still feels good after someone has used it for a while.</p>
+            </div>
+            <div class="qa-row" style="--c: var(--orange)">
+              <div class="critter" style="--c: var(--blue)"><i></i></div>
+              <h3 class="qa-q light">What do you do off the clock?</h3>
+              <p class="qa-a">I play a lot of FC and COD. Long walks too, that's where most of my ideas show up.</p>
+            </div>
+          </div>
+          <div class="hero-actions" style="margin-top: 56px">
+            <a href="mailto:hello@xaintxql.com?subject=Book%20a%20call" class="btn btn-primary">Book a call <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="index.html#work" class="btn">See the work <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
       </section>
 
-      <section class="about-story-section">
-        <div class="about-section-heading">
-          <h2>My Story<span class="accent-dot">.</span></h2>
-        </div>
-
-        <div class="about-story-grid">
-          <article class="about-story-card about-story-wide">
-            <p>
-              I started with a strong curiosity for how digital products look and
-              communicate. What first pulled me in was not just code, but the way
-              good design can make something feel obvious, engaging, and memorable.
-            </p>
-            <p>
-              Over time, that curiosity became a working process. I learned to
-              think about hierarchy, spacing, typography, color, and interaction
-              as a complete system, not isolated details. That is what pushed me
-              toward becoming the kind of designer who also understands how the
-              interface gets built.
-            </p>
-          </article>
-
-          <article class="about-story-card">
-            <h3>What drives me</h3>
-            <p>
-              I enjoy creating experiences that feel modern, expressive, and
-              easy to navigate. I care about strong first impressions, but I also
-              care about whether the design still feels good after someone uses it
-              for a while.
-            </p>
-          </article>
-
-          <article class="about-story-card">
-            <h3>How I think</h3>
-            <p>
-              I approach design with both emotion and structure. I want an
-              interface to feel beautiful, but I also want it to solve a problem,
-              guide attention, and support a clear user goal.
-            </p>
-          </article>
+      <section id="snapshots">
+        <div class="wrap">
+          <h2 class="tools-title"><img class="h-icon " src="Assets/images/pixel/camera.svg" alt="" aria-hidden="true" />Snapshots</h2>
+          <p class="tools-sub">At work and off the clock.</p>
+          <div class="snaps" id="snaps"></div>
         </div>
       </section>
 
-      <section class="about-principles-section">
-        <div class="about-section-heading">
-          <h2>What Defines Me As A Designer<span class="accent-dot">.</span></h2>
-        </div>
+      <section id="tools">
+        <div class="wrap">
+          <h2 class="tools-title"><img class="h-icon " src="Assets/images/pixel/toolbox.svg" alt="" aria-hidden="true" />What's in the toolbox</h2>
+          <p class="tools-sub">Throw them around.</p>
 
-        <div class="about-principles-grid">
-          <article class="about-principle-card">
-            <i class="fa-solid fa-pen-ruler"></i>
-            <h3>Intentional Visual Taste</h3>
-            <p>
-              I care about details that make a design feel sharp, balanced, and
-              memorable rather than generic.
-            </p>
-          </article>
-
-          <article class="about-principle-card">
-            <i class="fa-solid fa-layer-group"></i>
-            <h3>Clear Structure</h3>
-            <p>
-              I like building layouts with strong hierarchy so users know where
-              to look, what matters, and what to do next.
-            </p>
-          </article>
-
-          <article class="about-principle-card">
-            <i class="fa-solid fa-bolt"></i>
-            <h3>Frontend Awareness</h3>
-            <p>
-              I design with implementation in mind, which helps me create ideas
-              that are not only attractive but practical to build.
-            </p>
-          </article>
-
-          <article class="about-principle-card">
-            <i class="fa-solid fa-heart"></i>
-            <h3>User-Centered Thinking</h3>
-            <p>
-              I want the final experience to feel intuitive, useful, and smooth
-              for the person on the other side of the screen.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="about-focus-section">
-        <div class="about-section-heading">
-          <h2>What I Love Building<span class="accent-dot">.</span></h2>
-        </div>
-
-        <div class="about-focus-grid">
-          <article class="about-focus-card">
-            <span>01</span>
-            <h3>Portfolio and brand websites</h3>
-            <p>Spaces that feel personal, clear, and visually expressive.</p>
-          </article>
-
-          <article class="about-focus-card">
-            <span>02</span>
-            <h3>Product interfaces</h3>
-            <p>Dashboard, ecommerce, and app experiences with cleaner flows.</p>
-          </article>
-
-          <article class="about-focus-card">
-            <span>03</span>
-            <h3>Showcase-driven pages</h3>
-            <p>Layouts that present work in a way that feels premium and confident.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="projects-contact-section about-contact-section" id="contact">
-        <section class="contact-panel projects-contact-panel">
-          <p class="section-label">Contact</p>
-          <h1>Want to build something with me<span class="accent-dot">?</span></h1>
-          <p class="contact-copy">
-            I am open to collaborations, freelance work, and creative digital
-            projects that need strong design thinking and polished frontend work.
-          </p>
-          <a href="mailto:hello@xaintxql.com" class="hero-btn hero-btn-primary">hello@xaintxql.com</a>
-        </section>
-
-        <footer class="contact-footer">
-          <nav class="contact-footer-nav" aria-label="Footer navigation">
-            <a href="index.html#home">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="about.html" class="active" aria-current="page">About</a>
-            <a href="#contact">Contact</a>
-          </nav>
-
-          <div class="contact-socials" aria-label="Social media links">
-            <a href="#" aria-label="X">
-              <i class="fa-brands fa-x-twitter"></i>
-            </a>
-            <a href="#" aria-label="Instagram">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="#" aria-label="GitHub">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="#" aria-label="LinkedIn">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
+          <div class="tool-board">
+            <svg width="0" height="0" aria-hidden="true" class="tool-defs"><filter id="tool-die-cut" x="-30%" y="-30%" width="160%" height="160%"><feMorphology in="SourceAlpha" operator="dilate" radius="3.4" result="grow"/><feFlood flood-color="#ffffff"/><feComposite in2="grow" operator="in" result="white"/><feOffset in="grow" dy="1.5" result="drop"/><feGaussianBlur in="drop" stdDeviation="1.3" result="dropBlur"/><feFlood flood-color="#000" flood-opacity="0.22"/><feComposite in2="dropBlur" operator="in" result="shadow"/><feMerge><feMergeNode in="shadow"/><feMergeNode in="white"/><feMergeNode in="SourceGraphic"/></feMerge></filter></svg>
+            <div class="tool-row" id="tool-arena">
+              <span class="tool" title="HTML"><img src="Assets/images/tools/html5.svg" alt="HTML" loading="lazy" /></span>
+              <span class="tool" title="CSS"><img src="Assets/images/tools/css3.svg" alt="CSS" loading="lazy" /></span>
+              <span class="tool" title="JavaScript"><img src="Assets/images/tools/javascript.svg" alt="JavaScript" loading="lazy" /></span>
+              <span class="tool" title="React"><img src="Assets/images/tools/react.svg" alt="React" loading="lazy" /></span>
+              <span class="tool" title="Tailwind CSS"><img src="Assets/images/tools/tailwindcss.svg" alt="Tailwind CSS" loading="lazy" /></span>
+              <span class="tool" title="Node.js"><img src="Assets/images/tools/nodedotjs.svg" alt="Node.js" loading="lazy" /></span>
+              <span class="tool" title="VS Code"><img src="Assets/images/tools/visualstudiocode.svg" alt="VS Code" loading="lazy" /></span>
+              <span class="tool" title="Cursor"><img src="Assets/images/tools/cursor.svg" alt="Cursor" loading="lazy" /></span>
+              <span class="tool" title="Claude Code"><img src="Assets/images/tools/claude.svg" alt="Claude Code" loading="lazy" /></span>
+              <span class="tool" title="Codex"><img src="Assets/images/tools/codex.png" alt="Codex" loading="lazy" /></span>
+              <span class="tool" title="Figma"><img src="Assets/images/tools/figma.svg" alt="Figma" loading="lazy" /></span>
+              <span class="tool" title="Git"><img src="Assets/images/tools/git.svg" alt="Git" loading="lazy" /></span>
+              <span class="tool" title="GitHub"><img src="Assets/images/tools/github.svg" alt="GitHub" loading="lazy" /></span>
+            </div>
           </div>
-        </footer>
-
-        <div class="contact-footer-meta">
-          <p>Copyright 2026 Xaint.XQL. All rights reserved.</p>
-          <p>Made by Xaint.</p>
         </div>
       </section>
     </main>
+
+    <footer class="sign-footer" id="contact">
+      <div class="sign-grid">
+        <div class="signpost">
+          <span class="post-pole"></span><span class="post-ring"></span><span class="post-base"></span>
+          <span class="cloud cl-left"></span><span class="cloud cl-right"></span>
+          <div class="signs">
+            <a class="sign" href="index.html#work" style="--bg:#93B4E6;--fg:#141210;--r:-8deg;--x:-36px;--rad:8px"><i class="fa-solid fa-diamond"></i><span>Work</span></a>
+            <a class="sign" href="playground.html" style="--bg:#E2622F;--fg:#fff;--r:12deg;--x:48px;--rad:999px"><i class="fa-solid fa-certificate"></i><span>Playground</span></a>
+            <a class="sign" href="about.html" style="--bg:#4F9A61;--fg:#fff;--r:-6deg;--x:-12px;--rad:8px"><i class="fa-solid fa-face-smile"></i><span>About</span></a>
+            <a class="sign" href="https://github.com/Saintdav3" target="_blank" rel="noopener" style="--bg:#B4A6EE;--fg:#141210;--r:8deg;--x:36px;--rad:999px"><i class="fa-brands fa-github"></i><span>GitHub</span></a>
+            <a class="sign" href="https://www.instagram.com/xaintxql/" target="_blank" rel="noopener" style="--bg:#F1CF6E;--fg:#141210;--r:-4deg;--x:-30px;--rad:8px"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
+            <a class="sign" href="https://x.com/xaintszn?s=11" target="_blank" rel="noopener" style="--bg:#C4442F;--fg:#F4EFE6;--r:10deg;--x:42px;--rad:999px"><i class="fa-solid fa-arrow-up-right-from-square"></i><span>X</span></a>
+          </div>
+        </div>
+
+        <div class="bubbles">
+          <div class="bubble b-purple">
+            <div class="bubble-body"><h2>Got something you want built properly?<img class="h-icon after" src="Assets/images/pixel/sparkle.svg" alt="" aria-hidden="true" /></h2></div>
+            <span class="tail tail-l"></span>
+          </div>
+          <div class="bubble b-green">
+            <div class="bubble-body"><p>Hiring for a full stack developer, or got a project in mind? I'd like to hear about it.</p></div>
+            <span class="tail tail-r"></span>
+          </div>
+          <div class="bubble b-orange">
+            <div class="bubble-body">
+              <div class="bubble-actions">
+                <a href="mailto:hello@xaintxql.com?subject=Book%20a%20call" class="b-btn b-dark">Book a call <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="mailto:hello@xaintxql.com" class="b-btn b-light">Email me <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <span class="tail tail-l"></span>
+          </div>
+        </div>
+      </div>
+      <p class="copy sign-copy">© 2026 Xaint.XQL</p>
+    </footer>
+
+    <script>
+      (function () {
+        var box = document.getElementById("snaps");
+        var VIDEOS = { 8: true, 9: true, 10: true };
+        var CAPTIONS = {
+          1: "Chasing the sunset", 2: "Live music, big crowd", 3: "Pool day", 4: "Golden hour",
+          5: "A quiet field at dusk", 6: "Clouds on the mountain", 7: "Game night",
+          8: "Sunset on the move", 9: "FC26, set piece", 10: "FC26, mid-match"
+        }; // snap-N.mp4 (muted, compressed) with snap-N.jpg as its poster
+        var count = 0;
+        for (var i = 1; i <= 12; i++) {
+          (function (n) {
+            var fig = document.createElement("figure");
+            fig.hidden = true; fig.tabIndex = 0; fig.setAttribute("role", "button"); fig.setAttribute("aria-label", "Zoom snapshot " + n);
+            var m;
+            if (VIDEOS[n]) {
+              m = document.createElement("video");
+              m.muted = true; m.loop = true; m.autoplay = true; m.playsInline = true; m.preload = "metadata";
+              m.setAttribute("muted", ""); m.setAttribute("playsinline", "");
+              m.poster = "Assets/images/snapshots/snap-" + n + ".jpg";
+              m.onloadeddata = function () { fig.hidden = false; count++; };
+              m.onerror = function () { fig.remove(); };
+              m.src = "Assets/images/snapshots/snap-" + n + ".mp4";
+            } else {
+              m = new Image(); m.alt = CAPTIONS[n] || "Snapshot " + n; m.loading = "eager";
+              m.onload = function () { fig.hidden = false; count++; };
+              m.onerror = function () { fig.remove(); };
+              m.src = "Assets/images/snapshots/snap-" + n + ".jpg";
+            }
+            fig.appendChild(m);
+            var cap = document.createElement("figcaption"); cap.textContent = CAPTIONS[n] || ""; if (CAPTIONS[n]) fig.appendChild(cap);
+            box.appendChild(fig);
+          })(i);
+        }
+        setTimeout(function () { if (!count) document.getElementById("snapshots").style.display = "none"; }, 2500);
+
+        // tap to zoom
+        var lb = document.createElement("div");
+        lb.className = "lightbox"; lb.hidden = true; lb.setAttribute("role", "dialog"); lb.setAttribute("aria-modal", "true"); lb.setAttribute("aria-label", "Snapshot viewer");
+        lb.innerHTML = '<button class="lb-btn lb-close" aria-label="Close">&times;</button><button class="lb-btn lb-prev" aria-label="Previous">&larr;</button><div class="lb-stage"></div><button class="lb-btn lb-next" aria-label="Next">&rarr;</button><p class="lb-count mono"></p>';
+        document.body.appendChild(lb);
+        var stage = lb.querySelector(".lb-stage"), counter = lb.querySelector(".lb-count"), cur = 0, lastFocus = null;
+        function items() { return [].slice.call(box.querySelectorAll("figure:not([hidden])")); }
+        function show(i) {
+          var list = items(); if (!list.length) return;
+          cur = (i + list.length) % list.length;
+          var src = list[cur].querySelector("img, video"), el;
+          if (src.tagName === "VIDEO") {
+            el = document.createElement("video");
+            el.src = src.src; el.poster = src.poster; el.muted = true; el.loop = true; el.autoplay = true; el.playsInline = true; el.controls = false;
+          } else { el = new Image(); el.src = src.src; el.alt = src.alt; }
+          stage.innerHTML = ""; stage.appendChild(el);
+          var c = list[cur].querySelector("figcaption"); counter.textContent = (c ? c.textContent + "  ·  " : "") + (cur + 1) + " / " + list.length;
+        }
+        function open(i) { lastFocus = document.activeElement; lb.hidden = false; document.body.style.overflow = "hidden"; show(i); lb.querySelector(".lb-close").focus(); }
+        function close() { lb.hidden = true; stage.innerHTML = ""; document.body.style.overflow = ""; if (lastFocus) lastFocus.focus(); }
+        box.addEventListener("click", function (e) { var f = e.target.closest("figure"); if (f) open(items().indexOf(f)); });
+        box.addEventListener("keydown", function (e) { if ((e.key === "Enter" || e.key === " ") && e.target.matches("figure")) { e.preventDefault(); open(items().indexOf(e.target)); } });
+        lb.addEventListener("click", function (e) {
+          if (e.target.closest(".lb-prev")) show(cur - 1);
+          else if (e.target.closest(".lb-next")) show(cur + 1);
+          else if (e.target.closest(".lb-close") || e.target === lb || e.target === stage) close();
+        });
+        document.addEventListener("keydown", function (e) {
+          if (lb.hidden) return;
+          if (e.key === "Escape") close(); else if (e.key === "ArrowLeft") show(cur - 1); else if (e.key === "ArrowRight") show(cur + 1);
+        });
+        var sx = null;
+        lb.addEventListener("touchstart", function (e) { sx = e.touches[0].clientX; }, { passive: true });
+        lb.addEventListener("touchend", function (e) { if (sx === null) return; var dx = e.changedTouches[0].clientX - sx; sx = null; if (Math.abs(dx) > 50) show(cur + (dx < 0 ? 1 : -1)); });
+      })();
+    </script>
+    <script>
+      (function () {
+        var arena = document.getElementById("tool-arena");
+        if (!arena || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+        var tools = [].slice.call(arena.querySelectorAll(".tool"));
+        var G = 800, REST = 0.4, AIR = 0.997, S, R, W, H, items = [], started = false, last = 0, drag = null;
+
+        function measure() {
+          W = arena.clientWidth; H = arena.clientHeight;
+          S = tools[0].offsetWidth; R = S * 0.42;
+        }
+        function setup() {
+          arena.classList.add("physics");
+          measure();
+          items = tools.map(function (el, i) {
+            return { el: el, x: R + Math.random() * Math.max(1, W - 2 * R), y: -S * (i + 1) * 1.4, vx: (Math.random() - .5) * 120, vy: 0, a: Math.random() * 40 - 20, va: (Math.random() - .5) * 60 };
+          });
+        }
+        function step(dt) {
+          var i, j, p, q;
+          for (i = 0; i < items.length; i++) {
+            p = items[i];
+            if (p === drag) continue;
+            p.vy += G * dt; p.vx *= AIR; p.x += p.vx * dt; p.y += p.vy * dt; p.a += p.va * dt;
+            if (p.x < R) { p.x = R; p.vx = -p.vx * REST; }
+            if (p.x > W - R) { p.x = W - R; p.vx = -p.vx * REST; }
+            if (p.y > H - R) { p.y = H - R; p.vy = -p.vy * REST; p.vx *= 0.96; p.va = p.vx * 0.3; if (Math.abs(p.vy) < 40) p.vy = 0; }
+          }
+          for (i = 0; i < items.length; i++) for (j = i + 1; j < items.length; j++) {
+            p = items[i]; q = items[j];
+            var dx = q.x - p.x, dy = q.y - p.y, d = Math.sqrt(dx * dx + dy * dy), min = R * 2;
+            if (d > 0 && d < min) {
+              var nx = dx / d, ny = dy / d, o = (min - d) / 2;
+              if (p !== drag) { p.x -= nx * o; p.y -= ny * o; }
+              if (q !== drag) { q.x += nx * o; q.y += ny * o; }
+              var rv = (q.vx - p.vx) * nx + (q.vy - p.vy) * ny;
+              if (rv < 0) {
+                var imp = -(1 + REST) * rv / 2;
+                if (p !== drag) { p.vx -= imp * nx; p.vy -= imp * ny; }
+                if (q !== drag) { q.vx += imp * nx; q.vy += imp * ny; }
+              }
+            }
+          }
+        }
+        function draw() {
+          items.forEach(function (p) {
+            p.el.style.transform = "translate(" + (p.x - S / 2) + "px," + (p.y - S / 2) + "px) rotate(" + p.a + "deg)";
+          });
+        }
+        function loop(t) {
+          var dt = Math.min(0.033, (t - last) / 1000 || 0.016); last = t;
+          for (var k = 0; k < 2; k++) step(dt / 2);
+          draw(); requestAnimationFrame(loop);
+        }
+        function pos(e) { var r = arena.getBoundingClientRect(); return { x: e.clientX - r.left, y: e.clientY - r.top }; }
+        arena.addEventListener("pointerdown", function (e) {
+          var el = e.target.closest(".tool"); if (!el) return;
+          var p = items.filter(function (it) { return it.el === el; })[0], c = pos(e);
+          drag = p; p.ox = p.x - c.x; p.oy = p.y - c.y; p.vx = p.vy = 0; p.lx = c.x; p.ly = c.y; p.lt = performance.now();
+          el.setPointerCapture(e.pointerId); el.classList.add("grabbing"); e.preventDefault();
+        });
+        arena.addEventListener("pointermove", function (e) {
+          if (!drag) return;
+          var c = pos(e), now = performance.now(), dt = Math.max(1, now - drag.lt) / 1000;
+          drag.vx = (c.x - drag.lx) / dt; drag.vy = (c.y - drag.ly) / dt;
+          drag.lx = c.x; drag.ly = c.y; drag.lt = now;
+          drag.x = Math.min(W - R, Math.max(R, c.x + drag.ox)); drag.y = Math.min(H - R, Math.max(R, c.y + drag.oy));
+        });
+        function release() {
+          if (!drag) return;
+          drag.el.classList.remove("grabbing");
+          drag.vx = Math.max(-1000, Math.min(1000, drag.vx)); drag.vy = Math.max(-1000, Math.min(1000, drag.vy));
+          drag.va = drag.vx * 0.15; drag = null;
+        }
+        arena.addEventListener("pointerup", release); arena.addEventListener("pointercancel", release);
+        window.addEventListener("resize", function () { if (started) measure(); });
+
+        new IntersectionObserver(function (entries, obs) {
+          if (entries[0].isIntersecting && !started) { started = true; setup(); requestAnimationFrame(loop); obs.disconnect(); }
+        }, { threshold: 0.35 }).observe(arena);
+      })();
+    </script>
+    <script>
+      document.getElementById("theme-toggle").addEventListener("click", function () {
+        var root = document.documentElement;
+        var next = root.dataset.theme === "dark" ? "light" : "dark";
+        root.dataset.theme = next;
+        try { localStorage.setItem("theme", next); } catch (e) {}
+      });
+    </script>
+      <script src="Assets/Js/reveal.js"></script>
   </body>
 </html>

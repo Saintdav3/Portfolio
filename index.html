@@ -3,386 +3,212 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Xaintxql.</title>
-    <link rel="stylesheet" href="Assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="Assets/css/style.css" />
-    <link rel="stylesheet" href="Assets/vendor/Font awesome/css/all.css" />
+    <title>Dave (Xaint.XQL) | Full Stack Developer</title>
+    <meta name="description" content="Dave builds clean, modern websites and web apps, from design to deployed product." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Geist+Mono:wght@400;500;600&family=Inter+Tight:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="Assets/vendor/Font awesome/css/all.css" />
+    <link rel="stylesheet" href="Assets/css/style.css" />
+    <script>
+      try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+    </script>
   </head>
   <body>
-    <!-- Nav-bar -->
-    <header class="floating-nav-wrap mt-3">
-      <a href="#home" class="floating-chip brand-chip">Xaint.XQL</a>
-
-      <nav class="floating-nav">
-        <ul class="nav-links">
-          <li><a href="#home" class="active" aria-current="page">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </nav>
-
-      <a
-        href="#contact"
-        class="floating-chip contact-chip"
-        aria-label="Contact page"
-      >
-        <i class="fa-regular fa-comment"></i>
-      </a>
+    <header class="site-nav">
+      <div class="wrap">
+        <a href="#top" class="pill brand"><img class="avatar" src="Assets/images/me-head.jpg" alt="" /> Dave · Xaint.XQL</a>
+        <nav class="pill nav-links" aria-label="Primary">
+          <a href="#work">Work</a>
+          <a href="playground.html">Playground</a>
+          <a href="about.html">About</a>
+        </nav>
+        <div class="nav-right">
+          <button class="pill icon-pill" id="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-circle-half-stroke"></i></button>
+          <a href="mailto:hello@xaintxql.com" class="pill email-pill">hello@xaintxql.com</a>
+        </div>
+      </div>
     </header>
 
-    <!-- body -->
-    <main class="hero-section" id="home">
-      <div class="hero-text-side">
-        <p class="hero-kicker">Creative Developer</p>
-        <h1>Hey, I'm Dave<span class="accent-dot">.</span></h1>
-        <p class="hero-copy">
-          I build clean, modern web experiences with thoughtful visuals and
-          smooth interactions. This space is where I share my projects, story,
-          and the work I care about.
-        </p>
-        <div class="hero-actions">
-          <a href="#contact" class="hero-btn hero-btn-primary">Get In Touch</a>
-          <a href="#projects" class="hero-btn hero-btn-outline"
-            >Browse Projects</a
-          >
+    <main id="top">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="critter c1"><i></i></div>
+        <div class="critter c2"><i></i></div>
+        <div class="critter c3"><i></i></div>
+        <div class="critter c4"><i></i></div>
+        <div class="critter c5"><i></i></div>
+        <span class="pix p1"></span><span class="pix p2"></span>
+
+        <div class="wrap">
+          <h1 class="headline" aria-label="I design websites and I build them.">
+            <span class="row"><span class="word w-blue">I design</span><span class="word w-yellow">websites</span></span>
+            <span class="row"><span class="word w-paper">and I</span><span class="word w-orange">build</span><span class="word w-green">them.</span></span>
+          </h1>
+          <p class="hero-copy">
+            I'm a Full Stack Developer based in Abuja. I turn rough ideas into clean, fast, polished sites and apps, then ship them live.
+          </p>
+          <div class="hero-actions">
+            <a href="mailto:hello@xaintxql.com?subject=Book%20a%20call" class="btn btn-primary">Book a call <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="mailto:hello@xaintxql.com" class="btn">Email me <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
         </div>
-      </div>
-      <div class="hero-image-side">
-        <div class="image-ring">
-          <img
-            src="Assets/images/Gemini_Generated_Image_kf4bj1kf4bj1kf4b.png"
-            alt="Portrait of Dave"
-            class="hero-image"
-          />
-        </div>
-      </div>
-    </main>
-
-    <!-- Projects Section -->
-    <section class="projects-section" id="projects">
-      <div class="projects-heading">
-        <h2>Projects<span class="accent-dot">.</span></h2>
-      </div>
-
-      <div class="projects-showcase">
-        <article class="project-showcase-card">
-          <div class="project-showcase-visual showcase-econe">
-            <div class="showcase-wave"></div>
-            <div class="project-image-spot">
-              <img
-                src="Assets/images/ecom.png"
-                alt="E Cone project screenshot"
-              />
-            </div>
-          </div>
-          <div class="project-showcase-copy">
-            <h3>E-Cone</h3>
-            <p>
-              Ecommerce store for gadgets and accessories with a polished
-              product display, fast browsing flow, and clean conversion-focused
-              layout.
-            </p>
-          </div>
-        </article>
-
-        <article class="project-showcase-card">
-          <div class="project-showcase-visual showcase-fly-chicken">
-            <div class="showcase-wave"></div>
-            <div class="project-image-spot">
-              <img
-                src="Assets/images/food.png"
-                alt="Fly Chicken project screenshot"
-              />
-            </div>
-          </div>
-          <div class="project-showcase-copy">
-            <h3>Fly Chicken</h3>
-            <p>
-              Fast food ordering website built for quick discovery, strong meal
-              visuals, and a smooth mobile-to-desktop ordering experience.
-            </p>
-          </div>
-        </article>
-
-        <article class="project-showcase-card">
-          <div class="project-showcase-visual showcase-streamify">
-            <div class="showcase-wave"></div>
-            <div class="project-image-spot">
-              <img
-                src="Assets/images/music.png"
-                alt="Streamify project screenshot"
-              />
-            </div>
-          </div>
-          <div class="project-showcase-copy">
-            <h3>Streamify</h3>
-            <p>
-              Music streaming web app designed with immersive player views,
-              playlist discovery, and a sleek modern dashboard feel.
-            </p>
-          </div>
-        </article>
-
-        <article class="project-showcase-card">
-          <div class="project-showcase-visual showcase-notes">
-            <div class="showcase-wave"></div>
-            <div class="project-image-spot">
-              <img
-                src="Assets/images/notes.png"
-                alt="Notes and Reminder project screenshot"
-              />
-            </div>
-          </div>
-          <div class="project-showcase-copy">
-            <h3>Notes Reminder</h3>
-            <p>
-              Note and reminder web app focused on clarity, lightweight task
-              management, and a distraction-free productivity workflow.
-            </p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section class="experience-section" id="about">
-      <div class="experience-heading">
-        <h2>What I bring to every build<span class="accent-dot">.</span></h2>
-        <p>
-          I focus on design clarity, solid frontend execution, and thoughtful
-          product decisions that make digital experiences feel polished and
-          useful.
-        </p>
-      </div>
-
-      <div class="experience-grid">
-        <article class="experience-card">
-          <div class="experience-icon">
-            <i class="fa-solid fa-laptop-code"></i>
-          </div>
-          <h3>Frontend Development</h3>
-          <p>
-            Building responsive interfaces with clean structure, smooth
-            interactions, and a strong eye for visual balance.
-          </p>
-          <span class="experience-tag">HTML • CSS • Bootstrap</span>
-        </article>
-
-        <article class="experience-card">
-          <div class="experience-icon">
-            <i class="fa-solid fa-palette"></i>
-          </div>
-          <h3>UI Design Thinking</h3>
-          <p>
-            Turning rough ideas into polished layouts with better spacing,
-            hierarchy, and a more intentional visual system.
-          </p>
-          <span class="experience-tag">Layout • Color • Typography</span>
-        </article>
-
-        <article class="experience-card">
-          <div class="experience-icon">
-            <i class="fa-solid fa-cart-shopping"></i>
-          </div>
-          <h3>Product-Focused Builds</h3>
-          <p>
-            Creating landing pages, ecommerce concepts, and app interfaces that
-            keep usability and conversion in view.
-          </p>
-          <span class="experience-tag">Web Apps • Stores • Dashboards</span>
-        </article>
-
-        <article class="experience-card">
-          <div class="experience-icon">
-            <i class="fa-solid fa-wand-magic-sparkles"></i>
-          </div>
-          <h3>Creative Presentation</h3>
-          <p>
-            Styling portfolio sections and showcase blocks so the work feels
-            professional, modern, and memorable.
-          </p>
-          <span class="experience-tag">Showcase • Branding • Polish</span>
-        </article>
-      </div>
-    </section>
-
-    <!-- Work History Section -->
-    <section class="work-history-section" id="experience">
-      <div class="work-history-header">
-        <p class="section-label">Working Experience</p>
-        <h2>
-          Teams and companies I have worked with<span class="accent-dot"
-            >.</span
-          >
-        </h2>
-        <p>
-          I enjoy working across product, design, and engineering teams to shape
-          interfaces that are clear, scalable, and user-centered.
-        </p>
-      </div>
-
-      <div class="company-strip">
-        <span>Meta</span>
-        <span>Spotify</span>
-        <span>Microsoft</span>
-        <span>Shopify</span>
-        <span>Pinterest</span>
-      </div>
-
-      <div class="work-history-grid">
-        <article class="work-history-card">
-          <div class="work-history-top">
-            <h3>Product Interface Designer</h3>
-            <span>Meta</span>
-          </div>
-          <p>
-            Worked on modern interface directions, clearer design systems, and
-            polished user flows for high-visibility digital experiences.
-          </p>
-        </article>
-
-        <article class="work-history-card">
-          <div class="work-history-top">
-            <h3>Frontend Experience Builder</h3>
-            <span>Spotify</span>
-          </div>
-          <p>
-            Helped shape visually rich web experiences with strong interaction
-            quality, responsive behavior, and a more immersive product feel.
-          </p>
-        </article>
-
-        <article class="work-history-card">
-          <div class="work-history-top">
-            <h3>UI Systems Contributor</h3>
-            <span>Microsoft</span>
-          </div>
-          <p>
-            Contributed to scalable interface patterns with attention to layout
-            consistency, accessibility, and better visual hierarchy.
-          </p>
-        </article>
-
-        <article class="work-history-card">
-          <div class="work-history-top">
-            <h3>Commerce Experience Designer</h3>
-            <span>Shopify</span>
-          </div>
-          <p>
-            Focused on ecommerce presentation, storefront polish, and
-            product-led page structures that support stronger customer journeys.
-          </p>
-        </article>
-
-        <article class="work-history-card">
-          <div class="work-history-top">
-            <h3>Visual Product Creative</h3>
-            <span>Pinterest</span>
-          </div>
-          <p>
-            Supported creative web directions that balanced brand expression,
-            usability, and a clean content discovery experience.
-          </p>
-        </article>
-      </div>
-    </section>
-    
-    <!-- Skills Section -->
-    <section class="skills-section" id="skills">
-      <div class="skills-header">
-        <p class="section-label">Skills</p>
-        <h2>
-          Tools and capabilities I work with<span class="accent-dot">.</span>
-        </h2>
-        <p>
-          My skill set blends visual design thinking with frontend and backend
-          development so I can move comfortably from concept to implementation.
-        </p>
-      </div>
-
-      <div class="skills-grid">
-        <article class="skill-category-card">
-          <h3>Design</h3>
-          <div class="skill-pill-group">
-            <span>Web Design</span>
-            <span>UI/UX Design</span>
-            <span>Responsive Design</span>
-            <span>Wireframing</span>
-            <span>User Research</span>
-          </div>
-        </article>
-
-        <article class="skill-category-card">
-          <h3>Frontend</h3>
-          <div class="skill-pill-group">
-            <span>JavaScript</span>
-            <span>ReactJS</span>
-            <span>NextJS</span>
-            <span>CSS3</span>
-          </div>
-        </article>
-
-        <article class="skill-category-card">
-          <h3>Backend</h3>
-          <div class="skill-pill-group">
-            <span>NodeJS</span>
-            <span>MongoDB</span>
-            <span>ExpressJS</span>
-            <span>Vercel</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-     <div class="contact-page-body">
-    <main class="contact-page">
-      <section class="contact-panel">
-        <p class="section-label">Contact</p>
-        <h1>Let's build something clear and memorable<span class="accent-dot">.</span></h1>
-        <p class="contact-copy">
-          I am open to creative collaborations, product design work, and modern
-          frontend projects that need thoughtful execution.
-        </p>
-        <a href="mailto:hello@xaintxql.com" class="hero-btn hero-btn-primary">hello@xaintxql.com</a>
       </section>
 
-      <footer class="contact-footer">
-        <nav class="contact-footer-nav" aria-label="Footer navigation">
-          <a href="index.html#home">Home</a>
-          <a href="index.html#projects">Projects</a>
-          <a href="index.html#about">About</a>
-          <a href="projects.html" class="active" aria-current="page">Contact</a>
-        </nav>
+      <!-- Work -->
+      <section id="work">
+        <div class="wrap">
+          <div class="eyebrow"><h2><img class="h-icon " src="Assets/images/pixel/folder.svg" alt="" aria-hidden="true" />Selected work<img class="h-icon cursor-tag" src="Assets/images/pixel/cursor.svg" alt="" aria-hidden="true" /></h2><small>04 live sites · keep scrolling</small></div>
 
-        <div class="contact-socials" aria-label="Social media links">
-          <a href="#" aria-label="X">
-            <i class="fa-brands fa-x-twitter"></i>
-          </a>
-          <a href="#" aria-label="Instagram">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a href="#" aria-label="GitHub">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="#" aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
+          <div class="work-stack">
+            <article class="work-card" style="--bgc: var(--yellow)">
+              <a class="work-shot" href="https://claritydesk-by-stephanie.site" target="_blank" rel="noopener" aria-label="Open ClarityDesk by Stephanie">
+                <img src="Assets/images/work/claritydesk.jpg?v=2" alt="ClarityDesk by Stephanie website" loading="lazy" />
+              </a>
+              <div class="work-body">
+                <div class="work-meta"><span class="mono">01</span><span class="tag">Personal brand</span></div>
+                <h3>ClarityDesk by Stephanie</h3>
+                <p>A warm, editorial site for a virtual assistant, with services, project samples, credentials and a contact flow.</p>
+                <a class="work-link" href="https://claritydesk-by-stephanie.site" target="_blank" rel="noopener">Visit live site <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </article>
+
+            <article class="work-card" style="--bgc: var(--purple)">
+              <a class="work-shot" href="https://faiveglobal.ltd" target="_blank" rel="noopener" aria-label="Open Faive Global × Iamfainna">
+                <img src="Assets/images/work/faive-global.jpg?v=2" alt="Faive Global × Iamfainna website" loading="lazy" />
+              </a>
+              <div class="work-body">
+                <div class="work-meta"><span class="mono">02</span><span class="tag">Creator portfolio</span></div>
+                <h3>Faive Global × Iamfainna</h3>
+                <p>Portfolio for a beauty and lifestyle creator, showcasing brand partners and campaign case studies.</p>
+                <div class="stats"><div><b>96.9M+</b><span>views of results shown</span></div></div>
+                <a class="work-link" href="https://faiveglobal.ltd" target="_blank" rel="noopener">Visit live site <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </article>
+
+            <article class="work-card" style="--bgc: #8fb0e8">
+              <a class="work-shot" href="https://theastroe.com" target="_blank" rel="noopener" aria-label="Open AstroE">
+                <img src="Assets/images/work/astroe.jpg?v=2" alt="AstroE website" loading="lazy" />
+              </a>
+              <div class="work-body">
+                <div class="work-meta"><span class="mono">03</span><span class="tag">Crypto brand</span></div>
+                <h3>AstroE</h3>
+                <p>Landing site for the AstroE Solana token, with a cosmic identity, tokenomics, roadmap, white paper and a live trends preview.</p>
+                <a class="work-link" href="https://theastroe.com" target="_blank" rel="noopener">Visit live site <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </article>
+
+            <article class="work-card" style="--bgc: var(--green)">
+              <a class="work-shot" href="https://trends.theastroe.com" target="_blank" rel="noopener" aria-label="Open AstroE TrendBoard">
+                <img src="Assets/images/work/astroe-trends.jpg?v=2" alt="AstroE TrendBoard dashboard" loading="lazy" />
+              </a>
+              <div class="work-body">
+                <div class="work-meta"><span class="mono">04</span><span class="tag">Web app</span></div>
+                <h3>AstroE TrendBoard</h3>
+                <p>A live dashboard that ranks trending Solana tokens from X mentions, with heat scores, filters, sparklines, a live ticker and light/dark themes.</p>
+                <a class="work-link" href="https://trends.theastroe.com" target="_blank" rel="noopener">Visit live site <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
         </div>
-      </footer>
+      </section>
 
-      <div class="contact-footer-meta">
-        <p>Copyright 2026 Xaint.XQL. All rights reserved.</p>
-        <p>Made by Xaint.</p>
+      <!-- What I work on -->
+      <section id="about">
+        <div class="wrap">
+          <div class="eyebrow"><h2>What I work on</h2></div>
+          <p class="lede">The kinds of problems I get pulled into, and the ones I go looking for.</p>
+          <div class="focus-grid">
+            <article class="focus-card"><div class="dot" style="--c: var(--blue)"><i class="fa-solid fa-laptop-code"></i></div><h3>Frontend development</h3><p>Responsive interfaces with clean structure, smooth interactions and a strong eye for visual balance.</p></article>
+            <article class="focus-card"><div class="dot" style="--c: var(--orange)"><i class="fa-solid fa-palette"></i></div><h3>Web &amp; UI design</h3><p>Turning rough ideas into polished layouts with better spacing, hierarchy and a more intentional visual system.</p></article>
+            <article class="focus-card"><div class="dot" style="--c: var(--green)"><i class="fa-solid fa-cart-shopping"></i></div><h3>Product-focused builds</h3><p>Landing pages, stores and dashboards that keep usability and conversion in view.</p></article>
+            <article class="focus-card"><div class="dot" style="--c: var(--purple)"><i class="fa-solid fa-wand-magic-sparkles"></i></div><h3>Design that ships</h3><p>I design with implementation in mind, so what you approve is what actually goes live.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stack marquee -->
+      <div class="marquee" id="stack" aria-label="Tools I use">
+        <div class="marquee-track">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Tailwind</span><span>Node.js</span><span>Git</span><span>GitHub</span>
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Tailwind</span><span>Node.js</span><span>Git</span><span>GitHub</span>
+        </div>
       </div>
+
+      <!-- Journey -->
+      <section>
+        <div class="wrap">
+          <div class="eyebrow"><h2><img class="h-icon " src="Assets/images/pixel/star.svg" alt="" aria-hidden="true" />How I think</h2><small>Design + code</small></div>
+          <div class="journey">
+            <div class="journey-card"><span class="mono">01</span><h3>Intentional taste</h3><p>The small details that make a design feel sharp and memorable instead of generic.</p></div>
+            <div class="journey-card"><span class="mono">02</span><h3>Clear structure</h3><p>Strong hierarchy, so people know where to look, what matters and what to do next.</p></div>
+            <div class="journey-card"><span class="mono">03</span><h3>Built to last</h3><p>Interfaces that still feel good after someone has used them for a while.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials: hidden until you add real quotes.
+           1) Fill in the quote, name and role below.  2) Delete the "hidden" attribute on the section.
+           Copy a whole <figure class="quote">...</figure> to add more. -->
+      <section id="testimonials" hidden>
+        <div class="wrap">
+          <div class="eyebrow"><h2><img class="h-icon " src="Assets/images/pixel/chat.svg" alt="" aria-hidden="true" />Word of mouth</h2><small>A few notes from people I've worked with</small></div>
+          <div class="quotes">
+            <figure class="quote" style="--c: var(--yellow)">
+              <blockquote>YOUR CLIENT'S QUOTE HERE.</blockquote>
+              <figcaption><b>Client name</b><span>Role, Company</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
     </main>
-  </div>
+
+    <footer class="sign-footer" id="contact">
+      <div class="sign-grid">
+        <div class="signpost">
+          <span class="post-pole"></span><span class="post-ring"></span><span class="post-base"></span>
+          <span class="cloud cl-left"></span><span class="cloud cl-right"></span>
+          <div class="signs">
+            <a class="sign" href="#work" style="--bg:#93B4E6;--fg:#141210;--r:-8deg;--x:-36px;--rad:8px"><i class="fa-solid fa-diamond"></i><span>Work</span></a>
+            <a class="sign" href="playground.html" style="--bg:#E2622F;--fg:#fff;--r:12deg;--x:48px;--rad:999px"><i class="fa-solid fa-certificate"></i><span>Playground</span></a>
+            <a class="sign" href="about.html" style="--bg:#4F9A61;--fg:#fff;--r:-6deg;--x:-12px;--rad:8px"><i class="fa-solid fa-face-smile"></i><span>About</span></a>
+            <a class="sign" href="https://github.com/Saintdav3" target="_blank" rel="noopener" style="--bg:#B4A6EE;--fg:#141210;--r:8deg;--x:36px;--rad:999px"><i class="fa-brands fa-github"></i><span>GitHub</span></a>
+            <a class="sign" href="https://www.instagram.com/xaintxql/" target="_blank" rel="noopener" style="--bg:#F1CF6E;--fg:#141210;--r:-4deg;--x:-30px;--rad:8px"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
+            <a class="sign" href="https://x.com/xaintszn?s=11" target="_blank" rel="noopener" style="--bg:#C4442F;--fg:#F4EFE6;--r:10deg;--x:42px;--rad:999px"><i class="fa-solid fa-arrow-up-right-from-square"></i><span>X</span></a>
+          </div>
+        </div>
+
+        <div class="bubbles">
+          <div class="bubble b-purple">
+            <div class="bubble-body"><h2>Got something you want built properly?<img class="h-icon after" src="Assets/images/pixel/sparkle.svg" alt="" aria-hidden="true" /></h2></div>
+            <span class="tail tail-l"></span>
+          </div>
+          <div class="bubble b-green">
+            <div class="bubble-body"><p>Hiring for a full stack developer, or got a project in mind? I'd like to hear about it.</p></div>
+            <span class="tail tail-r"></span>
+          </div>
+          <div class="bubble b-orange">
+            <div class="bubble-body">
+              <div class="bubble-actions">
+                <a href="mailto:hello@xaintxql.com?subject=Book%20a%20call" class="b-btn b-dark">Book a call <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="mailto:hello@xaintxql.com" class="b-btn b-light">Email me <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <span class="tail tail-l"></span>
+          </div>
+        </div>
+      </div>
+      <p class="copy sign-copy">© 2026 Xaint.XQL</p>
+    </footer>
+
+    <script>
+      document.getElementById("theme-toggle").addEventListener("click", function () {
+        var root = document.documentElement;
+        var next = root.dataset.theme === "dark" ? "light" : "dark";
+        root.dataset.theme = next;
+        try { localStorage.setItem("theme", next); } catch (e) {}
+      });
+    </script>
+      <script src="Assets/Js/reveal.js"></script>
   </body>
-  <script src="Assets/Js/bootstrap.bundle.min.js"></script>
 </html>

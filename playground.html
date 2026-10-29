@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playground | Dave (Xaint.XQL)</title>
+    <meta name="description" content="Experiments, older builds and side projects by Dave (Xaint.XQL)." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Geist+Mono:wght@400;500;600&family=Inter+Tight:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="Assets/vendor/Font awesome/css/all.css" />
+    <link rel="stylesheet" href="Assets/css/style.css" />
+    <script>
+      try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <header class="site-nav">
+      <div class="wrap">
+        <a href="index.html" class="pill brand"><img class="avatar" src="Assets/images/me-head.jpg" alt="" /> Dave · Xaint.XQL</a>
+        <nav class="pill nav-links" aria-label="Primary">
+          <a href="index.html#work">Work</a>
+          <a href="playground.html" aria-current="page" style="color: var(--primary)">Playground</a>
+          <a href="about.html">About</a>
+        </nav>
+        <div class="nav-right">
+          <button class="pill icon-pill" id="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-circle-half-stroke"></i></button>
+          <a href="mailto:hello@xaintxql.com" class="pill email-pill">hello@xaintxql.com</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="about-hero">
+        <div class="wrap">
+          <h1 class="about-title" style="font-size: clamp(56px, 10vw, 128px)"><img class="h-icon" src="Assets/images/pixel/play.svg" alt="" aria-hidden="true" />Playground</h1>
+          <p class="about-sub">Experiments, older builds and things I made just to see if they could work.</p>
+          <p class="mono" style="margin-top: 28px">3 pieces · tap one to expand</p>
+        </div>
+      </section>
+
+      <section style="padding-top: 20px">
+        <div class="wrap">
+          <div class="folders">
+          <article class="folder" style="--c:#B4A6EE;--c2:#9a89dc">
+            <button class="folder-btn" type="button" aria-expanded="false" aria-controls="d-xql">
+              <span class="f-back"></span>
+              <span class="f-tab mono">01</span>
+              <span class="f-paper"><img src="Assets/images/playground/xql.jpg" alt="Screenshot of XQL" loading="lazy" /></span>
+              <span class="f-front"><span class="f-title">XQL</span><span class="f-kind">Solana DeFi concept</span></span>
+            </button>
+            <div class="folder-detail" id="d-xql"><div class="folder-detail-inner">
+              <p>A landing-page concept for a cross-chain liquidity protocol on Solana, with a glowing animated hero and protocol, tokenomics, roadmap and community sections.</p>
+              <div class="folder-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+              <a class="work-link" href="playground/xql/index.html" target="_blank" rel="noopener">Open demo <i class="fa-solid fa-arrow-right"></i></a>
+            </div></div>
+          </article>
+          <article class="folder" style="--c:#93B4E6;--c2:#7a9ed3">
+            <button class="folder-btn" type="button" aria-expanded="false" aria-controls="d-xaintxql">
+              <span class="f-back"></span>
+              <span class="f-tab mono">02</span>
+              <span class="f-paper"><img src="Assets/images/playground/xaintxql.jpg" alt="Screenshot of Xaintxql" loading="lazy" /></span>
+              <span class="f-front"><span class="f-title">Xaintxql</span><span class="f-kind">My earlier portfolio</span></span>
+            </button>
+            <div class="folder-detail" id="d-xaintxql"><div class="folder-detail-inner">
+              <p>The portfolio I built before this one: an animated hero with a code card, plus skills, projects, services, journey and contact sections.</p>
+              <div class="folder-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+              <a class="work-link" href="playground/xaintxql/index.html" target="_blank" rel="noopener">Open demo <i class="fa-solid fa-arrow-right"></i></a>
+            </div></div>
+          </article>
+          <article class="folder" style="--c:#F4A3BC;--c2:#e58aa7">
+            <button class="folder-btn" type="button" aria-expanded="false" aria-controls="d-shawty">
+              <span class="f-back"></span>
+              <span class="f-tab mono">03</span>
+              <span class="f-paper"><img src="Assets/images/playground/shawty.jpg" alt="Screenshot of Girlfriend's Day" loading="lazy" /></span>
+              <span class="f-front"><span class="f-title">Girlfriend's Day</span><span class="f-kind">Interactive love letter</span></span>
+            </button>
+            <div class="folder-detail" id="d-shawty"><div class="folder-detail-inner">
+              <p>A private gift page: a code-locked entrance, a loading sequence, a story told through memories and a little music player. Shown here as a preview only, because it was made for one person.</p>
+              <div class="folder-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+              <span class="mono">Private · preview only</span>
+            </div></div>
+          </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="sign-footer" id="contact">
+      <div class="sign-grid">
+        <div class="signpost">
+          <span class="post-pole"></span><span class="post-ring"></span><span class="post-base"></span>
+          <span class="cloud cl-left"></span><span class="cloud cl-right"></span>
+          <div class="signs">
+            <a class="sign" href="index.html#work" style="--bg:#93B4E6;--fg:#141210;--r:-8deg;--x:-36px;--rad:8px"><i class="fa-solid fa-diamond"></i><span>Work</span></a>
+            <a class="sign" href="playground.html" style="--bg:#E2622F;--fg:#fff;--r:12deg;--x:48px;--rad:999px"><i class="fa-solid fa-certificate"></i><span>Playground</span></a>
+            <a class="sign" href="about.html" style="--bg:#4F9A61;--fg:#fff;--r:-6deg;--x:-12px;--rad:8px"><i class="fa-solid fa-face-smile"></i><span>About</span></a>
+            <a class="sign" href="https://github.com/Saintdav3" target="_blank" rel="noopener" style="--bg:#B4A6EE;--fg:#141210;--r:8deg;--x:36px;--rad:999px"><i class="fa-brands fa-github"></i><span>GitHub</span></a>
+            <a class="sign" href="https://www.instagram.com/xaintxql/" target="_blank" rel="noopener" style="--bg:#F1CF6E;--fg:#141210;--r:-4deg;--x:-30px;--rad:8px"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
+            <a class="sign" href="https://x.com/xaintszn?s=11" target="_blank" rel="noopener" style="--bg:#C4442F;--fg:#F4EFE6;--r:10deg;--x:42px;--rad:999px"><i class="fa-solid fa-arrow-up-right-from-square"></i><span>X</span></a>
+          </div>
+        </div>
+
+        <div class="bubbles">
+          <div class="bubble b-purple">
+            <div class="bubble-body"><h2>Got something you want built properly?<img class="h-icon after" src="Assets/images/pixel/sparkle.svg" alt="" aria-hidden="true" /></h2></div>
+            <span class="tail tail-l"></span>
+          </div>
+          <div class="bubble b-green">
+            <div class="bubble-body"><p>Hiring for a full stack developer, or got a project in mind? I'd like to hear about it.</p></div>
+            <span class="tail tail-r"></span>
+          </div>
+          <div class="bubble b-orange">
+            <div class="bubble-body">
+              <div class="bubble-actions">
+                <a href="mailto:hello@xaintxql.com?subject=Book%20a%20call" class="b-btn b-dark">Book a call <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="mailto:hello@xaintxql.com" class="b-btn b-light">Email me <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <span class="tail tail-l"></span>
+          </div>
+        </div>
+      </div>
+      <p class="copy sign-copy">© 2026 Xaint.XQL</p>
+    </footer>
+
+    <script>
+      document.querySelectorAll(".folder-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var open = btn.getAttribute("aria-expanded") === "true";
+          document.querySelectorAll(".folder-btn").forEach(function (b) { b.setAttribute("aria-expanded", "false"); b.closest(".folder").classList.remove("open"); });
+          if (!open) { btn.setAttribute("aria-expanded", "true"); btn.closest(".folder").classList.add("open"); }
+        });
+      });
+    </script>
+    <script>
+      document.getElementById("theme-toggle").addEventListener("click", function () {
+        var root = document.documentElement;
+        var next = root.dataset.theme === "dark" ? "light" : "dark";
+        root.dataset.theme = next;
+        try { localStorage.setItem("theme", next); } catch (e) {}
+      });
+    </script>
+    <script src="Assets/Js/reveal.js"></script>
+  </body>
+</html>

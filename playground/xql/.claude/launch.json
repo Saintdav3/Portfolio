@@ -1,0 +1,33 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "XQL — Static Site",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "/Users/apple/Documents/Web-Dev/crypto", "-p", "8080", "--no-clipboard"],
+      "cwd": "/Users/apple/Documents/Web-Dev/crypto",
+      "port": 8080
+    },
+    {
+      "name": "Portfolio Advanced — Vite (React)",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "cwd": "/Users/apple/Documents/Web-Dev/Portfolio advanc",
+      "port": 5173
+    },
+    {
+      "name": "Faive Global — Client (http-server)",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev:client"],
+      "cwd": "/Users/apple/Documents/Web-Dev/faive-global",
+      "port": 5500
+    },
+    {
+      "name": "Faive Global — API Server (nodemon)",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "cwd": "/Users/apple/Documents/Web-Dev/faive-global/server",
+      "port": 3000
+    }
+  ]
+}
