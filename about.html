@@ -4,18 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About | Dave (Xaint.XQL)</title>
-    <meta name="description" content="A little about Dave: a full stack developer based in Abuja who designs and ships." />
+    <meta name="description" content="About Dave: a full stack developer based in Abuja who designs and ships." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Geist+Mono:wght@400;500;600&family=Inter+Tight:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Inter+Tight:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="Assets/vendor/Font awesome/css/all.css" />
-    <link rel="stylesheet" href="Assets/css/style.css" />
+    <link rel="stylesheet" href="Assets/css/style.css?v=20261029b" />
+    <link rel="stylesheet" href="Assets/css/layout.css?v=20261029b" />
     <script>
       try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
     </script>
   </head>
   <body>
-    <header class="site-nav">
+    <header class="site-nav" id="top">
       <div class="wrap">
         <a href="index.html" class="pill brand"><img class="avatar" src="Assets/images/me-head.jpg" alt="" /> Dave · Xaint.XQL</a>
         <nav class="pill nav-links" aria-label="Primary">
@@ -34,124 +35,106 @@
       <section class="about-hero">
         <div class="wrap">
           <h1 class="about-title">
-            A little<img class="h-icon title-star" src="Assets/images/pixel/star.svg" alt="" aria-hidden="true" /><br />
-            <span class="photo-line"><span class="photo-tile"><img src="Assets/images/me-head.jpg" alt="Portrait of Dave" /><img class="h-icon tile-cursor" src="Assets/images/pixel/cursor.svg" alt="" aria-hidden="true" /></span>about me</span>
+            Meet<img class="h-icon title-star" src="Assets/images/pixel/bolt.svg" alt="" aria-hidden="true" /><br />
+            <span class="photo-line"><span class="photo-tile"><img src="Assets/images/me-head.jpg" alt="Portrait of Dave" /><img class="h-icon tile-cursor" src="Assets/images/pixel/pointer.svg" alt="" aria-hidden="true" /></span>Dave</span>
           </h1>
           <p class="about-sub">I'm Dave, a Full Stack Developer based in Abuja.</p>
-        </div>
-      </section>
-
-      <section>
-        <div class="wrap">
-          <h2 class="qa-title"><img class="h-icon " src="Assets/images/pixel/chat.svg" alt="" aria-hidden="true" />Ask me anything</h2>
-          <div class="qa">
-            <div class="qa-row" style="--c: #8fb0e8">
-              <div class="critter" style="--c: var(--red)"><i></i></div>
-              <h3 class="qa-q">What kind of work do you like doing?</h3>
-              <p class="qa-a">I care about clarity, visual storytelling and turning ideas into polished web experiences people actually enjoy using. I love shaping how something looks, how it flows, and how it feels when someone lands on the page.</p>
-            </div>
-            <div class="qa-row" style="--c: var(--yellow)">
-              <div class="critter" style="--c: var(--green); --br: 10px"><i></i></div>
-              <h3 class="qa-q">How did you get started?</h3>
-              <p class="qa-a">I started with a strong curiosity for how digital products look and communicate. What pulled me in was not just code, but how good design can make something feel obvious, engaging and memorable. That curiosity became a process: hierarchy, spacing, typography, color and interaction as one system, not isolated details.</p>
-            </div>
-            <div class="qa-row" style="--c: var(--purple)">
-              <div class="critter" style="--c: var(--orange); --br: 10px"><i></i></div>
-              <h3 class="qa-q">Do you build things too, or only design them?</h3>
-              <p class="qa-a">Both. I'm a full stack developer, so I design with implementation in mind and what gets approved is what actually ships. I work across frontend and backend, from the first wireframe to a deployed product.</p>
-            </div>
-            <div class="qa-row" style="--c: var(--green)">
-              <div class="critter" style="--c: var(--purple)"><i></i></div>
-              <h3 class="qa-q light">What do you care about most in the work?</h3>
-              <p class="qa-a">I approach design with both emotion and structure. I want an interface to feel beautiful, but I also want it to solve a problem, guide attention and support a clear goal. A strong first impression matters, and so does whether it still feels good after someone has used it for a while.</p>
-            </div>
-            <div class="qa-row" style="--c: var(--orange)">
-              <div class="critter" style="--c: var(--blue)"><i></i></div>
-              <h3 class="qa-q light">What do you do off the clock?</h3>
-              <p class="qa-a">I play a lot of FC and COD. Long walks too, that's where most of my ideas show up.</p>
-            </div>
-          </div>
-          <div class="hero-actions" style="margin-top: 56px">
+          <ul class="facts" style="justify-content: center; margin: 28px 0 26px">
+            <li><i class="fa-solid fa-code"></i>Full stack developer</li>
+            <li><i class="fa-solid fa-location-dot"></i>Abuja, Nigeria</li>
+            <li><i class="fa-solid fa-gamepad"></i>FC &amp; COD player</li>
+            <li><i class="fa-solid fa-person-walking"></i>Long-walk thinker</li>
+          </ul>
+          <div class="hero-actions">
             <a href="mailto:hello@xaintxql.com?subject=Book%20a%20call" class="btn btn-primary">Book a call <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             <a href="index.html#work" class="btn">See the work <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
       </section>
 
-      <section id="snapshots">
+      <section class="section" id="snapshots">
         <div class="wrap">
-          <h2 class="tools-title"><img class="h-icon " src="Assets/images/pixel/camera.svg" alt="" aria-hidden="true" />Snapshots</h2>
-          <p class="tools-sub">At work and off the clock.</p>
+          <div class="sec-head"><h2><img class="h-icon" src="Assets/images/pixel/photo.svg" alt="" aria-hidden="true" />Life in frames</h2><p class="mono snaps-hint">Sunsets, stages and screens · tap to zoom</p></div>
           <div class="snaps" id="snaps"></div>
         </div>
       </section>
 
-      <section id="tools">
+      <section class="section" style="padding-top: 0">
         <div class="wrap">
-          <h2 class="tools-title"><img class="h-icon " src="Assets/images/pixel/toolbox.svg" alt="" aria-hidden="true" />What's in the toolbox</h2>
-          <p class="tools-sub">Throw them around.</p>
+          <div class="sec-head"><h2><img class="h-icon" src="Assets/images/pixel/ask.svg" alt="" aria-hidden="true" />Questions, answered</h2></div>
+          <div class="faq">
+            <details style="--c: #F1CF6E" open><summary><span class="num">01</span><span>How did you get started?</span><span class="plus"><i class="fa-solid fa-plus"></i></span></summary><p class="answer">I started with a strong curiosity for how digital products look and communicate. What pulled me in was not just code, but how good design can make something feel obvious, engaging and memorable. That curiosity became a process: hierarchy, spacing, typography, color and interaction as one system, not isolated details.</p></details>
+            <details style="--c: #93B4E6"><summary><span class="num">02</span><span>What kind of work do you like doing?</span><span class="plus"><i class="fa-solid fa-plus"></i></span></summary><p class="answer">I care about clarity, visual storytelling and turning ideas into polished web experiences people actually enjoy using. I love shaping how something looks, how it flows, and how it feels when someone lands on the page.</p></details>
+            <details style="--c: #B4A6EE"><summary><span class="num">03</span><span>Do you design too, or just code?</span><span class="plus"><i class="fa-solid fa-plus"></i></span></summary><p class="answer">Both. I'm a full stack developer, so I design with implementation in mind and what gets approved is what actually ships. I work across frontend and backend, from the first wireframe to a deployed product.</p></details>
+            <details style="--c: #9bd3a8"><summary><span class="num">04</span><span>What matters most when you build?</span><span class="plus"><i class="fa-solid fa-plus"></i></span></summary><p class="answer">I approach design with both emotion and structure. I want an interface to feel beautiful, but I also want it to solve a problem, guide attention and support a clear goal. A strong first impression matters, and so does whether it still feels good after someone has used it for a while.</p></details>
+            <details style="--c: #F4A27F"><summary><span class="num">05</span><span>What do you do for fun?</span><span class="plus"><i class="fa-solid fa-plus"></i></span></summary><p class="answer">I play a lot of FC and COD. Long walks too, that's where most of my ideas show up.</p></details>
+          </div>
+        </div>
+      </section>
 
+      <section class="section" id="tools" style="padding-top: 0">
+        <div class="wrap tools2">
+          <div>
+            <h2 class="sec-title" style="display:flex;align-items:center;margin:0;font:800 clamp(34px,5vw,56px)/1.05 var(--font-display);letter-spacing:-.04em"><img class="h-icon" src="Assets/images/pixel/gear.svg" alt="" aria-hidden="true" />My toolkit</h2>
+            <p class="lede" style="margin:14px 0 0;font-size:18px;color:var(--fg-soft)">Drag them around.</p>
+            <dl class="tool-groups">
+              <div><dt>Frontend</dt><dd>HTML · CSS · JavaScript · React · Tailwind</dd></div>
+              <div><dt>Backend</dt><dd>Node.js</dd></div>
+              <div><dt>Editors &amp; AI</dt><dd>VS Code · Cursor · Claude Code · Codex</dd></div>
+              <div><dt>Workflow</dt><dd>Figma · Git · GitHub</dd></div>
+            </dl>
+          </div>
           <div class="tool-board">
             <svg width="0" height="0" aria-hidden="true" class="tool-defs"><filter id="tool-die-cut" x="-30%" y="-30%" width="160%" height="160%"><feMorphology in="SourceAlpha" operator="dilate" radius="3.4" result="grow"/><feFlood flood-color="#ffffff"/><feComposite in2="grow" operator="in" result="white"/><feOffset in="grow" dy="1.5" result="drop"/><feGaussianBlur in="drop" stdDeviation="1.3" result="dropBlur"/><feFlood flood-color="#000" flood-opacity="0.22"/><feComposite in2="dropBlur" operator="in" result="shadow"/><feMerge><feMergeNode in="shadow"/><feMergeNode in="white"/><feMergeNode in="SourceGraphic"/></feMerge></filter></svg>
             <div class="tool-row" id="tool-arena">
-              <span class="tool" title="HTML"><img src="Assets/images/tools/html5.svg" alt="HTML" loading="lazy" /></span>
-              <span class="tool" title="CSS"><img src="Assets/images/tools/css3.svg" alt="CSS" loading="lazy" /></span>
-              <span class="tool" title="JavaScript"><img src="Assets/images/tools/javascript.svg" alt="JavaScript" loading="lazy" /></span>
-              <span class="tool" title="React"><img src="Assets/images/tools/react.svg" alt="React" loading="lazy" /></span>
-              <span class="tool" title="Tailwind CSS"><img src="Assets/images/tools/tailwindcss.svg" alt="Tailwind CSS" loading="lazy" /></span>
-              <span class="tool" title="Node.js"><img src="Assets/images/tools/nodedotjs.svg" alt="Node.js" loading="lazy" /></span>
-              <span class="tool" title="VS Code"><img src="Assets/images/tools/visualstudiocode.svg" alt="VS Code" loading="lazy" /></span>
-              <span class="tool" title="Cursor"><img src="Assets/images/tools/cursor.svg" alt="Cursor" loading="lazy" /></span>
-              <span class="tool" title="Claude Code"><img src="Assets/images/tools/claude.svg" alt="Claude Code" loading="lazy" /></span>
-              <span class="tool" title="Codex"><img src="Assets/images/tools/codex.png" alt="Codex" loading="lazy" /></span>
-              <span class="tool" title="Figma"><img src="Assets/images/tools/figma.svg" alt="Figma" loading="lazy" /></span>
-              <span class="tool" title="Git"><img src="Assets/images/tools/git.svg" alt="Git" loading="lazy" /></span>
-              <span class="tool" title="GitHub"><img src="Assets/images/tools/github.svg" alt="GitHub" loading="lazy" /></span>
+<span class="tool" title="HTML"><img src="Assets/images/tools/html5.svg" alt="HTML" loading="lazy" /></span>
+<span class="tool" title="CSS"><img src="Assets/images/tools/css3.svg" alt="CSS" loading="lazy" /></span>
+<span class="tool" title="JavaScript"><img src="Assets/images/tools/javascript.svg" alt="JavaScript" loading="lazy" /></span>
+<span class="tool" title="React"><img src="Assets/images/tools/react.svg" alt="React" loading="lazy" /></span>
+<span class="tool" title="Tailwind CSS"><img src="Assets/images/tools/tailwindcss.svg" alt="Tailwind CSS" loading="lazy" /></span>
+<span class="tool" title="Node.js"><img src="Assets/images/tools/nodedotjs.svg" alt="Node.js" loading="lazy" /></span>
+<span class="tool" title="VS Code"><img src="Assets/images/tools/visualstudiocode.svg" alt="VS Code" loading="lazy" /></span>
+<span class="tool" title="Cursor"><img src="Assets/images/tools/cursor.svg" alt="Cursor" loading="lazy" /></span>
+<span class="tool" title="Claude Code"><img src="Assets/images/tools/claude.svg" alt="Claude Code" loading="lazy" /></span>
+<span class="tool" title="Codex"><img src="Assets/images/tools/openai.svg" alt="Codex" loading="lazy" /></span>
+<span class="tool" title="Figma"><img src="Assets/images/tools/figma.svg" alt="Figma" loading="lazy" /></span>
+<span class="tool" title="Git"><img src="Assets/images/tools/git.svg" alt="Git" loading="lazy" /></span>
+<span class="tool" title="GitHub"><img src="Assets/images/tools/github.svg" alt="GitHub" loading="lazy" /></span>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="sign-footer" id="contact">
-      <div class="sign-grid">
-        <div class="signpost">
-          <span class="post-pole"></span><span class="post-ring"></span><span class="post-base"></span>
-          <span class="cloud cl-left"></span><span class="cloud cl-right"></span>
-          <div class="signs">
-            <a class="sign" href="index.html#work" style="--bg:#93B4E6;--fg:#141210;--r:-8deg;--x:-36px;--rad:8px"><i class="fa-solid fa-diamond"></i><span>Work</span></a>
-            <a class="sign" href="playground.html" style="--bg:#E2622F;--fg:#fff;--r:12deg;--x:48px;--rad:999px"><i class="fa-solid fa-certificate"></i><span>Playground</span></a>
-            <a class="sign" href="about.html" style="--bg:#4F9A61;--fg:#fff;--r:-6deg;--x:-12px;--rad:8px"><i class="fa-solid fa-face-smile"></i><span>About</span></a>
-            <a class="sign" href="https://github.com/Saintdav3" target="_blank" rel="noopener" style="--bg:#B4A6EE;--fg:#141210;--r:8deg;--x:36px;--rad:999px"><i class="fa-brands fa-github"></i><span>GitHub</span></a>
-            <a class="sign" href="https://www.instagram.com/xaintxql/" target="_blank" rel="noopener" style="--bg:#F1CF6E;--fg:#141210;--r:-4deg;--x:-30px;--rad:8px"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
-            <a class="sign" href="https://x.com/xaintszn?s=11" target="_blank" rel="noopener" style="--bg:#C4442F;--fg:#F4EFE6;--r:10deg;--x:42px;--rad:999px"><i class="fa-solid fa-arrow-up-right-from-square"></i><span>X</span></a>
-          </div>
-        </div>
-
-        <div class="bubbles">
-          <div class="bubble b-purple">
-            <div class="bubble-body"><h2>Got something you want built properly?<img class="h-icon after" src="Assets/images/pixel/sparkle.svg" alt="" aria-hidden="true" /></h2></div>
-            <span class="tail tail-l"></span>
-          </div>
-          <div class="bubble b-green">
-            <div class="bubble-body"><p>Hiring for a full stack developer, or got a project in mind? I'd like to hear about it.</p></div>
-            <span class="tail tail-r"></span>
-          </div>
-          <div class="bubble b-orange">
-            <div class="bubble-body">
-              <div class="bubble-actions">
-                <a href="mailto:hello@xaintxql.com?subject=Book%20a%20call" class="b-btn b-dark">Book a call <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                <a href="mailto:hello@xaintxql.com" class="b-btn b-light">Email me <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
+    <footer class="contact" id="contact">
+      <div class="wrap">
+        <div class="contact-grid">
+          <div>
+            <p class="mono">Let's work together</p>
+            <h2>Have an idea worth building?<img class="h-icon after" src="Assets/images/pixel/twinkle.svg" alt="" aria-hidden="true" /></h2>
+            <p class="lead">Need a developer, or got a project in mind? Tell me what you're after and I'll get back to you.</p>
+            <div class="hero-actions">
+              <a href="mailto:hello@xaintxql.com?subject=Book%20a%20call" class="btn btn-primary">Book a call <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="mailto:hello@xaintxql.com" class="btn">Email me <i class="fa-solid fa-arrow-right"></i></a>
             </div>
-            <span class="tail tail-l"></span>
           </div>
+          <ul class="contact-links">
+            <li><a href="https://github.com/Saintdav3" target="_blank" rel="noopener"><span>GitHub</span><span class="mono">@Saintdav3</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="https://x.com/xaintszn?s=11" target="_blank" rel="noopener"><span>X</span><span class="mono">@xaintszn</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="https://www.instagram.com/xaintxql/" target="_blank" rel="noopener"><span>Instagram</span><span class="mono">@xaintxql</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="mailto:hello@xaintxql.com"><span>Email</span><span class="mono">hello@xaintxql.com</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+          </ul>
+        </div>
+        <div class="wordmark" aria-hidden="true">XAINT.XQL</div>
+        <div class="contact-bottom">
+          <p class="copy">© 2026 Xaint.XQL</p>
+          <p class="copy">Built by hand in Abuja</p>
+          <a class="copy" href="#top">Back to top ↑</a>
         </div>
       </div>
-      <p class="copy sign-copy">© 2026 Xaint.XQL</p>
     </footer>
 
-    <script>
+<script>
       (function () {
         var box = document.getElementById("snaps");
         var VIDEOS = { 8: true, 9: true, 10: true };
@@ -223,7 +206,7 @@
         lb.addEventListener("touchend", function (e) { if (sx === null) return; var dx = e.changedTouches[0].clientX - sx; sx = null; if (Math.abs(dx) > 50) show(cur + (dx < 0 ? 1 : -1)); });
       })();
     </script>
-    <script>
+<script>
       (function () {
         var arena = document.getElementById("tool-arena");
         if (!arena || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
@@ -305,7 +288,7 @@
         }, { threshold: 0.35 }).observe(arena);
       })();
     </script>
-    <script>
+<script>
       document.getElementById("theme-toggle").addEventListener("click", function () {
         var root = document.documentElement;
         var next = root.dataset.theme === "dark" ? "light" : "dark";
@@ -313,7 +296,6 @@
         try { localStorage.setItem("theme", next); } catch (e) {}
       });
     </script>
-      <script src="Assets/Js/reveal.js"></script>
-    <script src="Assets/Js/site.js"></script>
+    <script src="Assets/Js/site.js?v=20261029b"></script>
   </body>
 </html>

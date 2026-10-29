@@ -4,18 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Playground | Dave (Xaint.XQL)</title>
-    <meta name="description" content="Experiments, older builds and side projects by Dave (Xaint.XQL)." />
+    <meta name="description" content="Older builds and side experiments by Dave (Xaint.XQL)." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Geist+Mono:wght@400;500;600&family=Inter+Tight:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Inter+Tight:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="Assets/vendor/Font awesome/css/all.css" />
-    <link rel="stylesheet" href="Assets/css/style.css" />
+    <link rel="stylesheet" href="Assets/css/style.css?v=20261029b" />
+    <link rel="stylesheet" href="Assets/css/layout.css?v=20261029b" />
     <script>
       try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
     </script>
   </head>
   <body>
-    <header class="site-nav">
+    <header class="site-nav" id="top">
       <div class="wrap">
         <a href="index.html" class="pill brand"><img class="avatar" src="Assets/images/me-head.jpg" alt="" /> Dave · Xaint.XQL</a>
         <nav class="pill nav-links" aria-label="Primary">
@@ -29,16 +30,17 @@
         </div>
       </div>
     </header>
+
     <main>
-      <section class="about-hero">
+      <section class="page-head">
         <div class="wrap">
-          <h1 class="about-title" style="font-size: clamp(56px, 10vw, 128px)"><img class="h-icon" src="Assets/images/pixel/play.svg" alt="" aria-hidden="true" />Playground</h1>
-          <p class="about-sub">Experiments, older builds and things I made just to see if they could work.</p>
-          <p class="mono" style="margin-top: 28px">3 pieces · tap one to expand</p>
+          <p class="mono">3 builds · tap a folder to open</p>
+          <h1 class="about-h1"><img class="h-icon" src="Assets/images/pixel/pad.svg" alt="" aria-hidden="true" />Playground</h1>
+          <p class="about-lead">Older builds and side experiments, kept here because they were fun to make.</p>
         </div>
       </section>
 
-      <section style="padding-top: 20px">
+      <section class="section" style="padding-top: 20px">
         <div class="wrap">
           <div class="folders">
           <article class="folder" style="--c:#B4A6EE;--c2:#9a89dc">
@@ -85,45 +87,35 @@
       </section>
     </main>
 
-    <footer class="sign-footer" id="contact">
-      <div class="sign-grid">
-        <div class="signpost">
-          <span class="post-pole"></span><span class="post-ring"></span><span class="post-base"></span>
-          <span class="cloud cl-left"></span><span class="cloud cl-right"></span>
-          <div class="signs">
-            <a class="sign" href="index.html#work" style="--bg:#93B4E6;--fg:#141210;--r:-8deg;--x:-36px;--rad:8px"><i class="fa-solid fa-diamond"></i><span>Work</span></a>
-            <a class="sign" href="playground.html" style="--bg:#E2622F;--fg:#fff;--r:12deg;--x:48px;--rad:999px"><i class="fa-solid fa-certificate"></i><span>Playground</span></a>
-            <a class="sign" href="about.html" style="--bg:#4F9A61;--fg:#fff;--r:-6deg;--x:-12px;--rad:8px"><i class="fa-solid fa-face-smile"></i><span>About</span></a>
-            <a class="sign" href="https://github.com/Saintdav3" target="_blank" rel="noopener" style="--bg:#B4A6EE;--fg:#141210;--r:8deg;--x:36px;--rad:999px"><i class="fa-brands fa-github"></i><span>GitHub</span></a>
-            <a class="sign" href="https://www.instagram.com/xaintxql/" target="_blank" rel="noopener" style="--bg:#F1CF6E;--fg:#141210;--r:-4deg;--x:-30px;--rad:8px"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
-            <a class="sign" href="https://x.com/xaintszn?s=11" target="_blank" rel="noopener" style="--bg:#C4442F;--fg:#F4EFE6;--r:10deg;--x:42px;--rad:999px"><i class="fa-solid fa-arrow-up-right-from-square"></i><span>X</span></a>
-          </div>
-        </div>
-
-        <div class="bubbles">
-          <div class="bubble b-purple">
-            <div class="bubble-body"><h2>Got something you want built properly?<img class="h-icon after" src="Assets/images/pixel/sparkle.svg" alt="" aria-hidden="true" /></h2></div>
-            <span class="tail tail-l"></span>
-          </div>
-          <div class="bubble b-green">
-            <div class="bubble-body"><p>Hiring for a full stack developer, or got a project in mind? I'd like to hear about it.</p></div>
-            <span class="tail tail-r"></span>
-          </div>
-          <div class="bubble b-orange">
-            <div class="bubble-body">
-              <div class="bubble-actions">
-                <a href="mailto:hello@xaintxql.com?subject=Book%20a%20call" class="b-btn b-dark">Book a call <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                <a href="mailto:hello@xaintxql.com" class="b-btn b-light">Email me <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
+    <footer class="contact" id="contact">
+      <div class="wrap">
+        <div class="contact-grid">
+          <div>
+            <p class="mono">Let's work together</p>
+            <h2>Have an idea worth building?<img class="h-icon after" src="Assets/images/pixel/twinkle.svg" alt="" aria-hidden="true" /></h2>
+            <p class="lead">Need a developer, or got a project in mind? Tell me what you're after and I'll get back to you.</p>
+            <div class="hero-actions">
+              <a href="mailto:hello@xaintxql.com?subject=Book%20a%20call" class="btn btn-primary">Book a call <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="mailto:hello@xaintxql.com" class="btn">Email me <i class="fa-solid fa-arrow-right"></i></a>
             </div>
-            <span class="tail tail-l"></span>
           </div>
+          <ul class="contact-links">
+            <li><a href="https://github.com/Saintdav3" target="_blank" rel="noopener"><span>GitHub</span><span class="mono">@Saintdav3</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="https://x.com/xaintszn?s=11" target="_blank" rel="noopener"><span>X</span><span class="mono">@xaintszn</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="https://www.instagram.com/xaintxql/" target="_blank" rel="noopener"><span>Instagram</span><span class="mono">@xaintxql</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="mailto:hello@xaintxql.com"><span>Email</span><span class="mono">hello@xaintxql.com</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+          </ul>
+        </div>
+        <div class="wordmark" aria-hidden="true">XAINT.XQL</div>
+        <div class="contact-bottom">
+          <p class="copy">© 2026 Xaint.XQL</p>
+          <p class="copy">Built by hand in Abuja</p>
+          <a class="copy" href="#top">Back to top ↑</a>
         </div>
       </div>
-      <p class="copy sign-copy">© 2026 Xaint.XQL</p>
     </footer>
 
-    <script>
+<script>
       document.querySelectorAll(".folder-btn").forEach(function (btn) {
         btn.addEventListener("click", function () {
           var open = btn.getAttribute("aria-expanded") === "true";
@@ -132,7 +124,7 @@
         });
       });
     </script>
-    <script>
+<script>
       document.getElementById("theme-toggle").addEventListener("click", function () {
         var root = document.documentElement;
         var next = root.dataset.theme === "dark" ? "light" : "dark";
@@ -140,7 +132,6 @@
         try { localStorage.setItem("theme", next); } catch (e) {}
       });
     </script>
-    <script src="Assets/Js/reveal.js"></script>
-    <script src="Assets/Js/site.js"></script>
+    <script src="Assets/Js/site.js?v=20261029b"></script>
   </body>
 </html>

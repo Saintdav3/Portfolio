@@ -7,19 +7,20 @@
     <meta name="description" content="Dave builds clean, modern websites and web apps, from design to deployed product." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Geist+Mono:wght@400;500;600&family=Inter+Tight:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Inter+Tight:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="Assets/vendor/Font awesome/css/all.css" />
-    <link rel="stylesheet" href="Assets/css/style.css" />
+    <link rel="stylesheet" href="Assets/css/style.css?v=20261029b" />
+    <link rel="stylesheet" href="Assets/css/layout.css?v=20261029b" />
     <script>
       try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
     </script>
   </head>
   <body>
-    <header class="site-nav">
+    <header class="site-nav" id="top">
       <div class="wrap">
-        <a href="#top" class="pill brand"><img class="avatar" src="Assets/images/me-head.jpg" alt="" /> Dave · Xaint.XQL</a>
+        <a href="index.html" class="pill brand"><img class="avatar" src="Assets/images/me-head.jpg" alt="" /> Dave · Xaint.XQL</a>
         <nav class="pill nav-links" aria-label="Primary">
-          <a href="#work">Work</a>
+          <a href="index.html#work">Work</a>
           <a href="playground.html">Playground</a>
           <a href="about.html">About</a>
         </nav>
@@ -30,129 +31,110 @@
       </div>
     </header>
 
-    <main id="top">
-      <!-- Hero -->
-      <section class="hero">
-        <div class="critter c1"><i></i></div>
-        <div class="critter c2"><i></i></div>
-        <div class="critter c3"><i></i></div>
-        <div class="critter c4"><i></i></div>
-        <div class="critter c5"><i></i></div>
-        <span class="pix p1"></span><span class="pix p2"></span>
-
-        <div class="wrap">
-          <h1 class="headline" aria-label="I design websites and I build them.">
-            <span class="row"><span class="word w-blue">I design</span><span class="word w-yellow">websites</span></span>
-            <span class="row"><span class="word w-paper">and I</span><span class="word w-orange">build</span><span class="word w-green">them.</span></span>
-          </h1>
-          <p class="hero-copy">
-            I'm a Full Stack Developer based in Abuja. I turn rough ideas into clean, fast, polished sites and apps, then ship them live.
-          </p>
-          <div class="hero-actions">
-            <a href="mailto:hello@xaintxql.com?subject=Book%20a%20call" class="btn btn-primary">Book a call <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            <a href="mailto:hello@xaintxql.com" class="btn">Email me <i class="fa-solid fa-arrow-right"></i></a>
+    <main>
+      <section class="hero hero2">
+        <div class="wrap hero2-grid">
+          <div>
+            <p class="status"><span class="dot"></span>Open for projects · Abuja, Nigeria</p>
+            <h1 class="headline" aria-label="I code clean. I design bold. I deliver fast.">
+              <span class="row"><span class="word w-blue">I code</span><span class="word w-yellow">clean.</span></span>
+              <span class="row"><span class="word w-orange">I design</span><span class="word w-paper">bold.</span></span>
+              <span class="row"><span class="word w-green">I deliver</span><span class="word w-purple">fast.</span></span>
+            </h1>
+            <p class="hero-copy">I'm Dave, a full stack developer. I turn rough ideas into clean, fast, polished sites and apps, then ship them live.</p>
+            <div class="hero-actions">
+              <a href="mailto:hello@xaintxql.com?subject=Book%20a%20call" class="btn btn-primary">Book a call <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#work" class="btn">See the work <i class="fa-solid fa-arrow-down"></i></a>
+            </div>
+          </div>
+          <div class="hero2-art">
+            <figure class="photo-card"><img src="Assets/images/me-portrait.jpg" alt="Portrait of Dave" /><figcaption>Dave · Abuja, NG</figcaption></figure>
+            <div class="critter c1"><i></i></div>
+          <div class="critter c2"><i></i></div>
+          <div class="critter c3"><i></i></div>
+          <div class="critter c4"><i></i></div>
+          <div class="critter c5"><i></i></div>
+          <span class="pix p1"></span><span class="pix p2"></span>
           </div>
         </div>
       </section>
 
-      <!-- Work -->
-      <section id="work">
+      <div class="marquee" id="stack" aria-label="Tools I use"><div class="marquee-track"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Tailwind</span><span>Node.js</span><span>VS Code</span><span>Cursor</span><span>Claude Code</span><span>Codex</span><span>Figma</span><span>Git</span><span>GitHub</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Tailwind</span><span>Node.js</span><span>VS Code</span><span>Cursor</span><span>Claude Code</span><span>Codex</span><span>Figma</span><span>Git</span><span>GitHub</span></div></div>
+
+      <section class="section" id="work">
         <div class="wrap">
-          <div class="eyebrow"><h2><img class="h-icon " src="Assets/images/pixel/folder.svg" alt="" aria-hidden="true" />Selected work<img class="h-icon cursor-tag" src="Assets/images/pixel/cursor.svg" alt="" aria-hidden="true" /></h2><small>04 live sites · keep scrolling</small></div>
-
-          <div class="work-stack">
-            <article class="work-card" style="--bgc: var(--yellow)">
-              <a class="work-shot" href="https://claritydesk-by-stephanie.site" target="_blank" rel="noopener" aria-label="Open ClarityDesk by Stephanie">
-                <img src="Assets/images/work/claritydesk.jpg?v=2" alt="ClarityDesk by Stephanie website" loading="lazy" />
-              </a>
-              <div class="work-body">
-                <div class="work-meta"><span class="mono">01</span><span class="tag">Personal brand</span></div>
-                <h3>ClarityDesk by Stephanie</h3>
-                <p>A warm, editorial site for a virtual assistant, with services, project samples, credentials and a contact flow.</p>
-                <a class="work-link" href="https://claritydesk-by-stephanie.site" target="_blank" rel="noopener">Visit live site <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
-            </article>
-
-            <article class="work-card" style="--bgc: var(--purple)">
-              <a class="work-shot" href="https://faiveglobal.ltd" target="_blank" rel="noopener" aria-label="Open Faive Global × Iamfainna">
-                <img src="Assets/images/work/faive-global.jpg?v=2" alt="Faive Global × Iamfainna website" loading="lazy" />
-              </a>
-              <div class="work-body">
-                <div class="work-meta"><span class="mono">02</span><span class="tag">Creator portfolio</span></div>
-                <h3>Faive Global × Iamfainna</h3>
-                <p>Portfolio for a beauty and lifestyle creator, showcasing brand partners and campaign case studies.</p>
-                <div class="stats"><div><b>96.9M+</b><span>views of results shown</span></div></div>
-                <a class="work-link" href="https://faiveglobal.ltd" target="_blank" rel="noopener">Visit live site <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
-            </article>
-
-            <article class="work-card" style="--bgc: #8fb0e8">
-              <a class="work-shot" href="https://theastroe.com" target="_blank" rel="noopener" aria-label="Open AstroE">
-                <img src="Assets/images/work/astroe.jpg?v=2" alt="AstroE website" loading="lazy" />
-              </a>
-              <div class="work-body">
-                <div class="work-meta"><span class="mono">03</span><span class="tag">Crypto brand</span></div>
-                <h3>AstroE</h3>
-                <p>Landing site for the AstroE Solana token, with a cosmic identity, tokenomics, roadmap, white paper and a live trends preview.</p>
-                <a class="work-link" href="https://theastroe.com" target="_blank" rel="noopener">Visit live site <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
-            </article>
-
-            <article class="work-card" style="--bgc: var(--green)">
-              <a class="work-shot" href="https://trends.theastroe.com" target="_blank" rel="noopener" aria-label="Open AstroE TrendBoard">
-                <img src="Assets/images/work/astroe-trends.jpg?v=2" alt="AstroE TrendBoard dashboard" loading="lazy" />
-              </a>
-              <div class="work-body">
-                <div class="work-meta"><span class="mono">04</span><span class="tag">Web app</span></div>
-                <h3>AstroE TrendBoard</h3>
-                <p>A live dashboard that ranks trending Solana tokens from X mentions, with heat scores, filters, sparklines, a live ticker and light/dark themes.</p>
-                <a class="work-link" href="https://trends.theastroe.com" target="_blank" rel="noopener">Visit live site <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
-            </article>
+          <div class="sec-head"><h2><img class="h-icon" src="Assets/images/pixel/window.svg" alt="" aria-hidden="true" />Things I've shipped</h2><p class="mono">04 live sites</p></div>
+          <div class="bento">
+          <article class="proj p1" style="--bgc: #F1CF6E">
+            <a class="proj-shot" href="https://claritydesk-by-stephanie.site" target="_blank" rel="noopener" aria-label="Open ClarityDesk by Stephanie"><img src="Assets/images/work/claritydesk.jpg?v=2" alt="ClarityDesk by Stephanie website" loading="lazy" /></a>
+            <div class="proj-body">
+              <div class="proj-meta"><span class="mono">01</span><span class="tag">Personal brand</span></div>
+              <h3>ClarityDesk by Stephanie</h3>
+              <p>A warm, editorial site for a virtual assistant, with services, project samples, credentials and a contact flow.</p>
+              <a class="work-link" href="https://claritydesk-by-stephanie.site" target="_blank" rel="noopener">Visit live site <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+          <article class="proj p2" style="--bgc: #B4A6EE">
+            <a class="proj-shot" href="https://faiveglobal.ltd" target="_blank" rel="noopener" aria-label="Open Faive Global × Iamfainna"><img src="Assets/images/work/faive-global.jpg?v=2" alt="Faive Global × Iamfainna website" loading="lazy" /></a>
+            <div class="proj-body">
+              <div class="proj-meta"><span class="mono">02</span><span class="tag">Creator portfolio</span></div>
+              <h3>Faive Global × Iamfainna</h3>
+              <p>Portfolio for a beauty and lifestyle creator, showcasing brand partners and campaign case studies.</p><div class="stats"><div><b>96.9M+</b><span>views of results shown</span></div></div>
+              <a class="work-link" href="https://faiveglobal.ltd" target="_blank" rel="noopener">Visit live site <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+          <article class="proj p3" style="--bgc: #93B4E6">
+            <a class="proj-shot" href="https://theastroe.com" target="_blank" rel="noopener" aria-label="Open AstroE"><img src="Assets/images/work/astroe.jpg?v=2" alt="AstroE website" loading="lazy" /></a>
+            <div class="proj-body">
+              <div class="proj-meta"><span class="mono">03</span><span class="tag">Crypto brand</span></div>
+              <h3>AstroE</h3>
+              <p>Landing site for the AstroE Solana token, with a cosmic identity, tokenomics, roadmap, white paper and a live trends preview.</p>
+              <a class="work-link" href="https://theastroe.com" target="_blank" rel="noopener">Visit live site <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+          <article class="proj p4" style="--bgc: #4F9A61">
+            <a class="proj-shot" href="https://trends.theastroe.com" target="_blank" rel="noopener" aria-label="Open AstroE TrendBoard"><img src="Assets/images/work/astroe-trends.jpg?v=2" alt="AstroE TrendBoard website" loading="lazy" /></a>
+            <div class="proj-body">
+              <div class="proj-meta"><span class="mono">04</span><span class="tag">Web app</span></div>
+              <h3>AstroE TrendBoard</h3>
+              <p>A live dashboard that ranks trending Solana tokens from X mentions, with heat scores, filters, sparklines, a live ticker and light/dark themes.</p>
+              <a class="work-link" href="https://trends.theastroe.com" target="_blank" rel="noopener">Visit live site <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
           </div>
         </div>
       </section>
 
-      <!-- What I work on -->
-      <section id="about">
+      <section class="section" style="padding-top: 0">
         <div class="wrap">
-          <div class="eyebrow"><h2>What I work on</h2></div>
-          <p class="lede">The kinds of problems I get pulled into, and the ones I go looking for.</p>
-          <div class="focus-grid">
-            <article class="focus-card"><div class="dot" style="--c: var(--blue)"><i class="fa-solid fa-laptop-code"></i></div><h3>Frontend development</h3><p>Responsive interfaces with clean structure, smooth interactions and a strong eye for visual balance.</p></article>
-            <article class="focus-card"><div class="dot" style="--c: var(--orange)"><i class="fa-solid fa-palette"></i></div><h3>Web &amp; UI design</h3><p>Turning rough ideas into polished layouts with better spacing, hierarchy and a more intentional visual system.</p></article>
-            <article class="focus-card"><div class="dot" style="--c: var(--green)"><i class="fa-solid fa-cart-shopping"></i></div><h3>Product-focused builds</h3><p>Landing pages, stores and dashboards that keep usability and conversion in view.</p></article>
-            <article class="focus-card"><div class="dot" style="--c: var(--purple)"><i class="fa-solid fa-wand-magic-sparkles"></i></div><h3>Design that ships</h3><p>I design with implementation in mind, so what you approve is what actually goes live.</p></article>
-          </div>
+          <div class="sec-head"><h2>What I do</h2><p class="lede">Where I'm most useful on a project, from the first sketch to the live link.</p></div>
+          <ol class="do-list">
+            <li class="do-row" style="--c: #93B4E6"><span class="num mono">01</span><h3>Frontend development</h3><p>Responsive interfaces with clean structure, smooth interactions and a strong eye for visual balance.</p><span class="go"><i class="fa-solid fa-arrow-right"></i></span></li>
+            <li class="do-row" style="--c: #F1CF6E"><span class="num mono">02</span><h3>Web & UI design</h3><p>Turning rough ideas into polished layouts with better spacing, hierarchy and a more intentional visual system.</p><span class="go"><i class="fa-solid fa-arrow-right"></i></span></li>
+            <li class="do-row" style="--c: #B4A6EE"><span class="num mono">03</span><h3>Product-focused builds</h3><p>Landing pages, stores and dashboards that keep usability and conversion in view.</p><span class="go"><i class="fa-solid fa-arrow-right"></i></span></li>
+            <li class="do-row" style="--c: #9bd3a8"><span class="num mono">04</span><h3>Design that ships</h3><p>I design with implementation in mind, so what you approve is what actually goes live.</p><span class="go"><i class="fa-solid fa-arrow-right"></i></span></li>
+          </ol>
         </div>
       </section>
 
-      <!-- Stack marquee -->
-      <div class="marquee" id="stack" aria-label="Tools I use">
-        <div class="marquee-track">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Tailwind</span><span>Node.js</span><span>Git</span><span>GitHub</span>
-          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Tailwind</span><span>Node.js</span><span>Git</span><span>GitHub</span>
-        </div>
-      </div>
-
-      <!-- Journey -->
-      <section>
+      <section class="section">
         <div class="wrap">
-          <div class="eyebrow"><h2><img class="h-icon " src="Assets/images/pixel/star.svg" alt="" aria-hidden="true" />How I think</h2><small>Design + code</small></div>
-          <div class="journey">
-            <div class="journey-card"><span class="mono">01</span><h3>Intentional taste</h3><p>The small details that make a design feel sharp and memorable instead of generic.</p></div>
-            <div class="journey-card"><span class="mono">02</span><h3>Clear structure</h3><p>Strong hierarchy, so people know where to look, what matters and what to do next.</p></div>
-            <div class="journey-card"><span class="mono">03</span><h3>Built to last</h3><p>Interfaces that still feel good after someone has used them for a while.</p></div>
-          </div>
+          <div class="sec-head"><h2><img class="h-icon" src="Assets/images/pixel/bolt.svg" alt="" aria-hidden="true" />How I work</h2><p class="mono">Four steps, no surprises</p></div>
+          <ol class="steps">
+            <li><div class="step-icon" style="--c: #F1CF6E; --r: -3deg"><img src="Assets/images/pixel/ask.svg" alt="" /></div><h3><span>01</span>Listen</h3><p>We start with what you need, who it is for and what "done" looks like.</p></li>
+            <li><div class="step-icon" style="--c: #93B4E6; --r: 2deg"><img src="Assets/images/pixel/window.svg" alt="" /></div><h3><span>02</span>Design</h3><p>Quick layouts and a clear visual direction before any code is written.</p></li>
+            <li><div class="step-icon" style="--c: #E2622F; --r: -2deg"><img src="Assets/images/pixel/gear.svg" alt="" /></div><h3><span>03</span>Build</h3><p>Clean, responsive code on a stack that fits the job.</p></li>
+            <li><div class="step-icon" style="--c: #9bd3a8; --r: 3deg"><img src="Assets/images/pixel/bolt.svg" alt="" /></div><h3><span>04</span>Ship</h3><p>Live on your domain, tested on real devices and ready to grow.</p></li>
+          </ol>
         </div>
       </section>
 
       <!-- Testimonials: hidden until you add real quotes.
            1) Fill in the quote, name and role below.  2) Delete the "hidden" attribute on the section.
            Copy a whole <figure class="quote">...</figure> to add more. -->
-      <section id="testimonials" hidden>
+      <section class="section" id="testimonials" hidden style="padding-top: 0">
         <div class="wrap">
-          <div class="eyebrow"><h2><img class="h-icon " src="Assets/images/pixel/chat.svg" alt="" aria-hidden="true" />Word of mouth</h2><small>A few notes from people I've worked with</small></div>
+          <div class="sec-head"><h2><img class="h-icon" src="Assets/images/pixel/ask.svg" alt="" aria-hidden="true" />Kind words</h2><p class="mono">What clients say</p></div>
           <div class="quotes">
             <figure class="quote" style="--c: var(--yellow)">
               <blockquote>YOUR CLIENT'S QUOTE HERE.</blockquote>
@@ -163,45 +145,35 @@
       </section>
     </main>
 
-    <footer class="sign-footer" id="contact">
-      <div class="sign-grid">
-        <div class="signpost">
-          <span class="post-pole"></span><span class="post-ring"></span><span class="post-base"></span>
-          <span class="cloud cl-left"></span><span class="cloud cl-right"></span>
-          <div class="signs">
-            <a class="sign" href="#work" style="--bg:#93B4E6;--fg:#141210;--r:-8deg;--x:-36px;--rad:8px"><i class="fa-solid fa-diamond"></i><span>Work</span></a>
-            <a class="sign" href="playground.html" style="--bg:#E2622F;--fg:#fff;--r:12deg;--x:48px;--rad:999px"><i class="fa-solid fa-certificate"></i><span>Playground</span></a>
-            <a class="sign" href="about.html" style="--bg:#4F9A61;--fg:#fff;--r:-6deg;--x:-12px;--rad:8px"><i class="fa-solid fa-face-smile"></i><span>About</span></a>
-            <a class="sign" href="https://github.com/Saintdav3" target="_blank" rel="noopener" style="--bg:#B4A6EE;--fg:#141210;--r:8deg;--x:36px;--rad:999px"><i class="fa-brands fa-github"></i><span>GitHub</span></a>
-            <a class="sign" href="https://www.instagram.com/xaintxql/" target="_blank" rel="noopener" style="--bg:#F1CF6E;--fg:#141210;--r:-4deg;--x:-30px;--rad:8px"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
-            <a class="sign" href="https://x.com/xaintszn?s=11" target="_blank" rel="noopener" style="--bg:#C4442F;--fg:#F4EFE6;--r:10deg;--x:42px;--rad:999px"><i class="fa-solid fa-arrow-up-right-from-square"></i><span>X</span></a>
-          </div>
-        </div>
-
-        <div class="bubbles">
-          <div class="bubble b-purple">
-            <div class="bubble-body"><h2>Got something you want built properly?<img class="h-icon after" src="Assets/images/pixel/sparkle.svg" alt="" aria-hidden="true" /></h2></div>
-            <span class="tail tail-l"></span>
-          </div>
-          <div class="bubble b-green">
-            <div class="bubble-body"><p>Hiring for a full stack developer, or got a project in mind? I'd like to hear about it.</p></div>
-            <span class="tail tail-r"></span>
-          </div>
-          <div class="bubble b-orange">
-            <div class="bubble-body">
-              <div class="bubble-actions">
-                <a href="mailto:hello@xaintxql.com?subject=Book%20a%20call" class="b-btn b-dark">Book a call <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                <a href="mailto:hello@xaintxql.com" class="b-btn b-light">Email me <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
+    <footer class="contact" id="contact">
+      <div class="wrap">
+        <div class="contact-grid">
+          <div>
+            <p class="mono">Let's work together</p>
+            <h2>Have an idea worth building?<img class="h-icon after" src="Assets/images/pixel/twinkle.svg" alt="" aria-hidden="true" /></h2>
+            <p class="lead">Need a developer, or got a project in mind? Tell me what you're after and I'll get back to you.</p>
+            <div class="hero-actions">
+              <a href="mailto:hello@xaintxql.com?subject=Book%20a%20call" class="btn btn-primary">Book a call <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="mailto:hello@xaintxql.com" class="btn">Email me <i class="fa-solid fa-arrow-right"></i></a>
             </div>
-            <span class="tail tail-l"></span>
           </div>
+          <ul class="contact-links">
+            <li><a href="https://github.com/Saintdav3" target="_blank" rel="noopener"><span>GitHub</span><span class="mono">@Saintdav3</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="https://x.com/xaintszn?s=11" target="_blank" rel="noopener"><span>X</span><span class="mono">@xaintszn</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="https://www.instagram.com/xaintxql/" target="_blank" rel="noopener"><span>Instagram</span><span class="mono">@xaintxql</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li><a href="mailto:hello@xaintxql.com"><span>Email</span><span class="mono">hello@xaintxql.com</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+          </ul>
+        </div>
+        <div class="wordmark" aria-hidden="true">XAINT.XQL</div>
+        <div class="contact-bottom">
+          <p class="copy">© 2026 Xaint.XQL</p>
+          <p class="copy">Built by hand in Abuja</p>
+          <a class="copy" href="#top">Back to top ↑</a>
         </div>
       </div>
-      <p class="copy sign-copy">© 2026 Xaint.XQL</p>
     </footer>
 
-    <script>
+<script>
       document.getElementById("theme-toggle").addEventListener("click", function () {
         var root = document.documentElement;
         var next = root.dataset.theme === "dark" ? "light" : "dark";
@@ -209,7 +181,6 @@
         try { localStorage.setItem("theme", next); } catch (e) {}
       });
     </script>
-      <script src="Assets/Js/reveal.js"></script>
-    <script src="Assets/Js/site.js"></script>
+    <script src="Assets/Js/site.js?v=20261029b"></script>
   </body>
 </html>

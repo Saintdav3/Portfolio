@@ -1,4 +1,4 @@
-// Interaction layer modelled on owoetoni.com (read with REA): custom pixel cursor with hover tags,
+// Interaction layer: custom pixel cursor with hover tags,
 // googly eyes that follow the pointer, draggable hero words/shapes, and scroll reveals.
 (function () {
   "use strict";
@@ -8,8 +8,8 @@
   var EMAIL = "hello@xaintxql.com";
 
   /* ------------------------------------------------------------------ cursor */
-  var ARROW = ["1000000", "1100000", "1210000", "1221000", "1222100", "1222210", "1222221", "1222111", "1212100", "1101210", "1000121", "0000110"];
-  var HAND = ["00001100000000", "00012210000000", "00012210000000", "00012210000000", "00012211100000", "00012212211000", "00012212212110", "01112212212121", "12212222222221", "12222222222221", "01222222222221", "00122222222221", "00122222222210", "00012222222210", "00001222222100", "00001111111100"];
+  var ARROW = ["10000000", "11000000", "12100000", "12210000", "12221000", "12222100", "12222210", "12222221", "12222111", "12112100", "11012210", "10011110"];
+  var HAND = ["000111000000", "001222100000", "001222100000", "001222111100", "001221222210", "001222222221", "112222222221", "122222222221", "122222222221", "012222222221", "001222222210", "001222222210", "000111111100"];
   var NS = "http://www.w3.org/2000/svg";
 
   function pixelSvg(rows, fill, px) {
@@ -33,12 +33,12 @@
   // what each kind of target says in the cursor tag
   var TAGS = [
     { sel: ".folder-btn", text: "OPEN FOLDER", icon: "fa-folder-open" },
-    { sel: ".snaps figure", text: "ZOOM", icon: "fa-magnifying-glass-plus" },
+    { sel: ".snaps figure", text: "ZOOM IN", icon: "fa-magnifying-glass-plus" },
     { sel: ".email-pill", text: "COPY EMAIL", icon: "fa-envelope", email: true },
-    { sel: 'a[href*="github.com"]', text: "VIEW ON GITHUB", icon: "fa-brands fa-github" },
-    { sel: 'a[href*="x.com"]', text: "VIEW ON X", icon: "fa-brands fa-x-twitter" },
-    { sel: 'a[href*="instagram.com"]', text: "VIEW INSTAGRAM", icon: "fa-brands fa-instagram" },
-    { sel: ".work-card a, .work-card .work-link", text: "VIEW WEBSITE", icon: "fa-arrow-up-right-from-square" },
+    { sel: 'a[href*="github.com"]', text: "SEE MY CODE", icon: "fa-brands fa-github" },
+    { sel: 'a[href*="x.com"]', text: "FIND ME ON X", icon: "fa-brands fa-x-twitter" },
+    { sel: 'a[href*="instagram.com"]', text: "SAY HI ON IG", icon: "fa-brands fa-instagram" },
+    { sel: ".proj a", text: "OPEN SITE", icon: "fa-arrow-up-right-from-square" },
     { sel: ".folder-detail a", text: "OPEN DEMO", icon: "fa-arrow-up-right-from-square" }
   ];
   var POINTER_SEL = 'a, button, [role="button"], [type="button"], [data-grab], .tool';
@@ -58,8 +58,8 @@
       '<div class="pc-icon"></div><div class="pc-tag" hidden></div>';
     doc.body.appendChild(wrap);
     var icon = wrap.querySelector(".pc-icon"), tag = wrap.querySelector(".pc-tag");
-    var arrow = pixelSvg(ARROW, "#E65F2E", 3);
-    var hand = pixelSvg(HAND, "#FFD34D", 2.4); hand.style.marginLeft = "-11px";
+    var arrow = pixelSvg(ARROW, "#4466D6", 3.2);
+    var hand = pixelSvg(HAND, "#F1CF6E", 2.6); hand.style.marginLeft = "-9px";
     icon.appendChild(arrow);
 
     var pos = { x: 0, y: 0, queued: false }, moved = false, inside = true, pressed = false;
@@ -95,7 +95,7 @@
       if (d.tag) {
         key = d.tag.text + (d.tag.email && copied ? "!" : "");
         if (key !== tagKey) {
-          var label = d.tag.email && copied ? "EMAIL COPIED!" : d.tag.text;
+          var label = d.tag.email && copied ? "COPIED!" : d.tag.text;
           tag.innerHTML = '<i class="' + (d.tag.icon.indexOf("fa-brands") === 0 ? d.tag.icon : "fa-solid " + d.tag.icon) + '"></i>' + label;
           tag.classList.toggle("ok", !!(d.tag.email && copied));
           tag.hidden = false;
@@ -121,7 +121,7 @@
     doc.addEventListener("mouseleave", function () { inside = false; wrap.classList.remove("on"); });
     doc.addEventListener("mouseenter", function () { inside = true; if (moved) wrap.classList.add("on"); });
 
-    // clicking the nav email pill copies the address (like the original)
+    // clicking the nav email pill copies the address
     doc.addEventListener("click", function (e) {
       var pill = e.target.closest && e.target.closest(".email-pill");
       if (!pill) return;
@@ -206,7 +206,7 @@
   }
 
   /* ------------------------------------------------------------ scroll reveal */
-  var REVEAL = ".eyebrow, .qa-row, .qa-title, .tools-title, .tools-sub, .focus-card, .work-card, .journey-card, .folder, .quote, .about-sub, .lede, .tool-board, .snaps, .hero-copy, .hero-actions";
+  var REVEAL = ".sec-head, .proj, .do-row, .steps li, .faq details, .photo-card, .about-lead, .facts, .snaps, .tools2 > *, .folder, .quote, .contact-links li, .contact h2, .hero2 .status, .hero-copy, .hero-actions, .page-head .wrap > *";
   function initReveal() {
     if (reduce || !("IntersectionObserver" in window)) return;
     var els = [].slice.call(doc.querySelectorAll(REVEAL));
