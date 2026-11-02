@@ -4,21 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About | Xaint.XQL</title>
-    <meta name="description" content="About Xaint.XQL: a full stack developer based in Abuja who designs and ships." />
+    <meta
+      name="description"
+      content="About Xaint.XQL: a full stack developer based in Abuja who designs and ships."
+    />
     <link rel="icon" href="Assets/images/favicon.ico" sizes="any" />
     <link rel="icon" type="image/svg+xml" href="Assets/images/favicon.svg" />
-    <link rel="icon" type="image/png" sizes="32x32" href="Assets/images/favicon-32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="Assets/images/favicon-16.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="Assets/images/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="Assets/images/favicon-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="Assets/images/favicon-16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="Assets/images/apple-touch-icon.png"
+    />
     <meta name="theme-color" content="#141210" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Inter+Tight:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Inter+Tight:wght@600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="Assets/vendor/Font awesome/css/all.css" />
     <link rel="stylesheet" href="Assets/css/style.css?v=20261029e" />
     <link rel="stylesheet" href="Assets/css/layout.css?v=20261029e" />
     <script>
-      try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+      try {
+        var t = localStorage.getItem("theme");
+        if (t) document.documentElement.dataset.theme = t;
+      } catch (e) {}
     </script>
   </head>
   <body>
@@ -28,11 +51,21 @@
         <nav class="pill nav-links" aria-label="Primary">
           <a href="index.html#work">Work</a>
           <a href="playground.html">Playground</a>
-          <a href="about.html" aria-current="page" style="color: var(--primary)">About</a>
+          <a href="about.html" aria-current="page" style="color: var(--primary)"
+            >About</a
+          >
         </nav>
         <div class="nav-right">
-          <button class="pill icon-pill" id="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-circle-half-stroke"></i></button>
-          <a href="mailto:hello@xaintxql.com" class="pill email-pill">hello@xaintxql.com</a>
+          <button
+            class="pill icon-pill"
+            id="theme-toggle"
+            aria-label="Toggle theme"
+          >
+            <i class="fa-solid fa-circle-half-stroke"></i>
+          </button>
+          <a href="mailto:hello@xaintxql.com" class="pill email-pill"
+            >hello@xaintxql.com</a
+          >
         </div>
       </div>
     </header>
@@ -41,39 +74,135 @@
       <section class="about-hero">
         <div class="wrap">
           <h1 class="about-title">
-            Meet<img class="h-icon title-star" src="Assets/images/pixel/bolt.svg" alt="" aria-hidden="true" /><br />
+            Meet<img
+              class="h-icon title-star"
+              src="Assets/images/pixel/bolt.svg"
+              alt=""
+              aria-hidden="true"
+            /><br />
             <span class="photo-line">Dave</span>
           </h1>
-          <p class="about-sub">I'm Dave, a Full Stack Developer based in Abuja.</p>
-          <ul class="facts" style="justify-content: center; margin: 28px 0 26px">
+          <p class="about-sub">
+            I'm Dave, a Full Stack Developer based in Abuja.
+          </p>
+          <ul
+            class="facts"
+            style="justify-content: center; margin: 28px 0 26px"
+          >
             <li><i class="fa-solid fa-code"></i>Full stack developer</li>
             <li><i class="fa-solid fa-location-dot"></i>Abuja, Nigeria</li>
             <li><i class="fa-solid fa-gamepad"></i>FC &amp; COD player</li>
             <li><i class="fa-solid fa-person-walking"></i>Long-walk thinker</li>
           </ul>
           <div class="hero-actions">
-            <a href="mailto:hello@xaintxql.com?subject=Book%20a%20call" class="btn btn-primary">Book a call <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            <a href="index.html#work" class="btn">See the work <i class="fa-solid fa-arrow-right"></i></a>
+            <a
+              href="mailto:hello@xaintxql.com?subject=Book%20a%20call"
+              class="btn btn-primary"
+              >Book a call <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+            <a href="index.html#work" class="btn"
+              >See the work <i class="fa-solid fa-arrow-right"></i
+            ></a>
           </div>
         </div>
       </section>
 
       <section class="section" id="snapshots">
         <div class="wrap">
-          <div class="sec-head"><h2><img class="h-icon" src="Assets/images/pixel/photo.svg" alt="" aria-hidden="true" />Life in frames</h2><p class="mono snaps-hint">Sunsets, stages and screens · tap to zoom</p></div>
+          <div class="sec-head">
+            <h2>
+              <img
+                class="h-icon"
+                src="Assets/images/pixel/photo.svg"
+                alt=""
+                aria-hidden="true"
+              />Life in frames
+            </h2>
+            <p class="mono snaps-hint">
+              Sunsets, stages and screens · tap to zoom
+            </p>
+          </div>
           <div class="snaps" id="snaps"></div>
         </div>
       </section>
 
       <section class="section" style="padding-top: 0">
         <div class="wrap">
-          <div class="sec-head"><h2><img class="h-icon" src="Assets/images/pixel/ask.svg" alt="" aria-hidden="true" />Questions, answered</h2></div>
+          <div class="sec-head">
+            <h2>
+              <img
+                class="h-icon"
+                src="Assets/images/pixel/ask.svg"
+                alt=""
+                aria-hidden="true"
+              />Questions, answered
+            </h2>
+          </div>
           <div class="faq">
-            <details style="--c: #F1CF6E" open><summary><span class="num">01</span><span>How did you get started?</span><span class="plus"><i class="fa-solid fa-plus"></i></span></summary><p class="answer">I started with a strong curiosity for how digital products look and communicate. What pulled me in was not just code, but how good design can make something feel obvious, engaging and memorable. That curiosity became a process: hierarchy, spacing, typography, color and interaction as one system, not isolated details.</p></details>
-            <details style="--c: #93B4E6"><summary><span class="num">02</span><span>What kind of work do you like doing?</span><span class="plus"><i class="fa-solid fa-plus"></i></span></summary><p class="answer">I care about clarity, visual storytelling and turning ideas into polished web experiences people actually enjoy using. I love shaping how something looks, how it flows, and how it feels when someone lands on the page.</p></details>
-            <details style="--c: #B4A6EE"><summary><span class="num">03</span><span>Do you design too, or just code?</span><span class="plus"><i class="fa-solid fa-plus"></i></span></summary><p class="answer">Both. I'm a full stack developer, so I design with implementation in mind and what gets approved is what actually ships. I work across frontend and backend, from the first wireframe to a deployed product.</p></details>
-            <details style="--c: #9bd3a8"><summary><span class="num">04</span><span>What matters most when you build?</span><span class="plus"><i class="fa-solid fa-plus"></i></span></summary><p class="answer">I approach design with both emotion and structure. I want an interface to feel beautiful, but I also want it to solve a problem, guide attention and support a clear goal. A strong first impression matters, and so does whether it still feels good after someone has used it for a while.</p></details>
-            <details style="--c: #F4A27F"><summary><span class="num">05</span><span>What do you do for fun?</span><span class="plus"><i class="fa-solid fa-plus"></i></span></summary><p class="answer">I play a lot of FC and COD. Long walks too, that's where most of my ideas show up.</p></details>
+            <details style="--c: #f1cf6e" open>
+              <summary>
+                <span class="num">01</span><span>How did you get started?</span
+                ><span class="plus"><i class="fa-solid fa-plus"></i></span>
+              </summary>
+              <p class="answer">
+                I started with a strong curiosity for how digital products look
+                and communicate. What pulled me in was not just code, but how
+                good design can make something feel obvious, engaging and
+                memorable. That curiosity became a process: hierarchy, spacing,
+                typography, color and interaction as one system, not isolated
+                details.
+              </p>
+            </details>
+            <details style="--c: #93b4e6">
+              <summary>
+                <span class="num">02</span
+                ><span>What kind of work do you like doing?</span
+                ><span class="plus"><i class="fa-solid fa-plus"></i></span>
+              </summary>
+              <p class="answer">
+                I care about clarity, visual storytelling and turning ideas into
+                polished web experiences people actually enjoy using. I love
+                shaping how something looks, how it flows, and how it feels when
+                someone lands on the page.
+              </p>
+            </details>
+            <details style="--c: #b4a6ee">
+              <summary>
+                <span class="num">03</span
+                ><span>Do you design too, or just code?</span
+                ><span class="plus"><i class="fa-solid fa-plus"></i></span>
+              </summary>
+              <p class="answer">
+                Both. I'm a full stack developer, so I design with
+                implementation in mind and what gets approved is what actually
+                ships. I work across frontend and backend, from the first
+                wireframe to a deployed product.
+              </p>
+            </details>
+            <details style="--c: #9bd3a8">
+              <summary>
+                <span class="num">04</span
+                ><span>What matters most when you build?</span
+                ><span class="plus"><i class="fa-solid fa-plus"></i></span>
+              </summary>
+              <p class="answer">
+                I approach design with both emotion and structure. I want an
+                interface to feel beautiful, but I also want it to solve a
+                problem, guide attention and support a clear goal. A strong
+                first impression matters, and so does whether it still feels
+                good after someone has used it for a while.
+              </p>
+            </details>
+            <details style="--c: #f4a27f">
+              <summary>
+                <span class="num">05</span><span>What do you do for fun?</span
+                ><span class="plus"><i class="fa-solid fa-plus"></i></span>
+              </summary>
+              <p class="answer">
+                I play a lot of FC and COD. Long walks too, that's where most of
+                my ideas show up.
+              </p>
+            </details>
           </div>
         </div>
       </section>
@@ -81,31 +210,159 @@
       <section class="section" id="tools" style="padding-top: 0">
         <div class="wrap tools2">
           <div>
-            <h2 class="sec-title" style="display:flex;align-items:center;margin:0;font:800 clamp(34px,5vw,56px)/1.05 var(--font-display);letter-spacing:-.04em"><img class="h-icon" src="Assets/images/pixel/gear.svg" alt="" aria-hidden="true" />My toolkit</h2>
-            <p class="lede" style="margin:14px 0 0;font-size:18px;color:var(--fg-soft)">Drag them around.</p>
+            <h2
+              class="sec-title"
+              style="
+                display: flex;
+                align-items: center;
+                margin: 0;
+                font: 800 clamp(34px, 5vw, 56px)/1.05 var(--font-display);
+                letter-spacing: -0.04em;
+              "
+            >
+              <img
+                class="h-icon"
+                src="Assets/images/pixel/gear.svg"
+                alt=""
+                aria-hidden="true"
+              />My toolkit
+            </h2>
+            <p
+              class="lede"
+              style="margin: 14px 0 0; font-size: 18px; color: var(--fg-soft)"
+            >
+              Drag them around.
+            </p>
             <dl class="tool-groups">
-              <div><dt>Frontend</dt><dd>HTML · CSS · JavaScript · React · Tailwind</dd></div>
-              <div><dt>Backend</dt><dd>Node.js</dd></div>
-              <div><dt>Editors &amp; AI</dt><dd>VS Code · Cursor · Claude Code · Codex</dd></div>
-              <div><dt>Workflow</dt><dd>Figma · Git · GitHub</dd></div>
+              <div>
+                <dt>Frontend</dt>
+                <dd>HTML · CSS · JavaScript · React · Tailwind</dd>
+              </div>
+              <div>
+                <dt>Backend</dt>
+                <dd>Node.js</dd>
+              </div>
+              <div>
+                <dt>Editors &amp; AI</dt>
+                <dd>VS Code · Cursor · Claude Code · Codex</dd>
+              </div>
+              <div>
+                <dt>Workflow</dt>
+                <dd>Figma · Git · GitHub</dd>
+              </div>
             </dl>
           </div>
           <div class="tool-board">
-            <svg width="0" height="0" aria-hidden="true" class="tool-defs"><filter id="tool-die-cut" x="-30%" y="-30%" width="160%" height="160%"><feMorphology in="SourceAlpha" operator="dilate" radius="3.4" result="grow"/><feFlood flood-color="#ffffff"/><feComposite in2="grow" operator="in" result="white"/><feOffset in="grow" dy="1.5" result="drop"/><feGaussianBlur in="drop" stdDeviation="1.3" result="dropBlur"/><feFlood flood-color="#000" flood-opacity="0.22"/><feComposite in2="dropBlur" operator="in" result="shadow"/><feMerge><feMergeNode in="shadow"/><feMergeNode in="white"/><feMergeNode in="SourceGraphic"/></feMerge></filter></svg>
+            <svg width="0" height="0" aria-hidden="true" class="tool-defs">
+              <filter
+                id="tool-die-cut"
+                x="-30%"
+                y="-30%"
+                width="160%"
+                height="160%"
+              >
+                <feMorphology
+                  in="SourceAlpha"
+                  operator="dilate"
+                  radius="3.4"
+                  result="grow"
+                />
+                <feFlood flood-color="#ffffff" />
+                <feComposite in2="grow" operator="in" result="white" />
+                <feOffset in="grow" dy="1.5" result="drop" />
+                <feGaussianBlur
+                  in="drop"
+                  stdDeviation="1.3"
+                  result="dropBlur"
+                />
+                <feFlood flood-color="#000" flood-opacity="0.22" />
+                <feComposite in2="dropBlur" operator="in" result="shadow" />
+                <feMerge>
+                  <feMergeNode in="shadow" />
+                  <feMergeNode in="white" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </svg>
             <div class="tool-row" id="tool-arena">
-<span class="tool" title="HTML"><img src="Assets/images/tools/html5.svg" alt="HTML" loading="lazy" /></span>
-<span class="tool" title="CSS"><img src="Assets/images/tools/css3.svg" alt="CSS" loading="lazy" /></span>
-<span class="tool" title="JavaScript"><img src="Assets/images/tools/javascript.svg" alt="JavaScript" loading="lazy" /></span>
-<span class="tool" title="React"><img src="Assets/images/tools/react.svg" alt="React" loading="lazy" /></span>
-<span class="tool" title="Tailwind CSS"><img src="Assets/images/tools/tailwindcss.svg" alt="Tailwind CSS" loading="lazy" /></span>
-<span class="tool" title="Node.js"><img src="Assets/images/tools/nodedotjs.svg" alt="Node.js" loading="lazy" /></span>
-<span class="tool" title="VS Code"><img src="Assets/images/tools/visualstudiocode.svg" alt="VS Code" loading="lazy" /></span>
-<span class="tool" title="Cursor"><img src="Assets/images/tools/cursor.svg" alt="Cursor" loading="lazy" /></span>
-<span class="tool" title="Claude Code"><img src="Assets/images/tools/claude.svg" alt="Claude Code" loading="lazy" /></span>
-<span class="tool" title="Codex"><img src="Assets/images/tools/openai.svg" alt="Codex" loading="lazy" /></span>
-<span class="tool" title="Figma"><img src="Assets/images/tools/figma.svg" alt="Figma" loading="lazy" /></span>
-<span class="tool" title="Git"><img src="Assets/images/tools/git.svg" alt="Git" loading="lazy" /></span>
-<span class="tool" title="GitHub"><img src="Assets/images/tools/github.svg" alt="GitHub" loading="lazy" /></span>
+              <span class="tool" title="HTML"
+                ><img
+                  src="Assets/images/tools/html5.svg"
+                  alt="HTML"
+                  loading="lazy"
+              /></span>
+              <span class="tool" title="CSS"
+                ><img
+                  src="Assets/images/tools/css3.svg"
+                  alt="CSS"
+                  loading="lazy"
+              /></span>
+              <span class="tool" title="JavaScript"
+                ><img
+                  src="Assets/images/tools/javascript.svg"
+                  alt="JavaScript"
+                  loading="lazy"
+              /></span>
+              <span class="tool" title="React"
+                ><img
+                  src="Assets/images/tools/react.svg"
+                  alt="React"
+                  loading="lazy"
+              /></span>
+              <span class="tool" title="Tailwind CSS"
+                ><img
+                  src="Assets/images/tools/tailwindcss.svg"
+                  alt="Tailwind CSS"
+                  loading="lazy"
+              /></span>
+              <span class="tool" title="Node.js"
+                ><img
+                  src="Assets/images/tools/nodedotjs.svg"
+                  alt="Node.js"
+                  loading="lazy"
+              /></span>
+              <span class="tool" title="VS Code"
+                ><img
+                  src="Assets/images/tools/visualstudiocode.svg"
+                  alt="VS Code"
+                  loading="lazy"
+              /></span>
+              <span class="tool" title="Cursor"
+                ><img
+                  src="Assets/images/tools/cursor.svg"
+                  alt="Cursor"
+                  loading="lazy"
+              /></span>
+              <span class="tool" title="Claude Code"
+                ><img
+                  src="Assets/images/tools/claude.svg"
+                  alt="Claude Code"
+                  loading="lazy"
+              /></span>
+              <span class="tool" title="Codex"
+                ><img
+                  src="Assets/images/tools/openai.svg"
+                  alt="Codex"
+                  loading="lazy"
+              /></span>
+              <span class="tool" title="Figma"
+                ><img
+                  src="Assets/images/tools/figma.svg"
+                  alt="Figma"
+                  loading="lazy"
+              /></span>
+              <span class="tool" title="Git"
+                ><img
+                  src="Assets/images/tools/git.svg"
+                  alt="Git"
+                  loading="lazy"
+              /></span>
+              <span class="tool" title="GitHub"
+                ><img
+                  src="Assets/images/tools/github.svg"
+                  alt="GitHub"
+                  loading="lazy"
+              /></span>
             </div>
           </div>
         </div>
@@ -117,18 +374,64 @@
         <div class="contact-grid">
           <div>
             <p class="mono">Let's work together</p>
-            <h2>Have an idea worth building?<img class="h-icon after" src="Assets/images/pixel/twinkle.svg" alt="" aria-hidden="true" /></h2>
-            <p class="lead">Need a developer, or got a project in mind? Tell me what you're after and I'll get back to you.</p>
+            <h2>
+              Have an idea worth building?<img
+                class="h-icon after"
+                src="Assets/images/pixel/twinkle.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </h2>
+            <p class="lead">
+              Need a developer, or got a project in mind? Tell me what you're
+              after and I'll get back to you.
+            </p>
             <div class="hero-actions">
-              <a href="mailto:hello@xaintxql.com?subject=Book%20a%20call" class="btn btn-primary">Book a call <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              <a href="mailto:hello@xaintxql.com" class="btn">Email me <i class="fa-solid fa-arrow-right"></i></a>
+              <a
+                href="mailto:hello@xaintxql.com?subject=Book%20a%20call"
+                class="btn btn-primary"
+                >Book a call
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+              <a href="mailto:hello@xaintxql.com" class="btn"
+                >Email me <i class="fa-solid fa-arrow-right"></i
+              ></a>
             </div>
           </div>
           <ul class="contact-links">
-            <li><a href="https://github.com/Saintdav3" target="_blank" rel="noopener"><span>GitHub</span><span class="mono">@Saintdav3</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-            <li><a href="https://x.com/xaintszn?s=11" target="_blank" rel="noopener"><span>X</span><span class="mono">@xaintszn</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-            <li><a href="https://www.instagram.com/xaintxql/" target="_blank" rel="noopener"><span>Instagram</span><span class="mono">@xaintxql</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-            <li><a href="mailto:hello@xaintxql.com"><span>Email</span><span class="mono">hello@xaintxql.com</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li>
+              <a
+                href="https://github.com/Saintdav3"
+                target="_blank"
+                rel="noopener"
+                ><span>GitHub</span><span class="mono">@Saintdav3</span
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://x.com/xaintszn?s=11"
+                target="_blank"
+                rel="noopener"
+                ><span>X</span><span class="mono">@xaintszn</span
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/xaintxql/"
+                target="_blank"
+                rel="noopener"
+                ><span>Instagram</span><span class="mono">@xaintxql</span
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </li>
+            <li>
+              <a href="mailto:hello@xaintxql.com"
+                ><span>Email</span><span class="mono">hello@xaintxql.com</span
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </li>
           </ul>
         </div>
         <div class="wordmark" aria-hidden="true">XAINT.XQL</div>
@@ -140,94 +443,218 @@
       </div>
     </footer>
 
-<script>
+    <script>
       (function () {
         var box = document.getElementById("snaps");
         var VIDEOS = { 8: true, 9: true, 10: true };
         var CAPTIONS = {
-          1: "Chasing the sunset", 2: "Live music, big crowd", 3: "Pool day", 4: "Golden hour",
-          5: "A quiet field at dusk", 6: "Clouds on the mountain", 7: "Game night",
-          8: "Sunset on the move", 9: "FC26, set piece", 10: "FC26, mid-match"
+          1: "Chasing the sunset",
+          2: "Live music, big crowd",
+          3: "Pool day",
+          4: "Golden hour",
+          5: "A quiet field at dusk",
+          6: "Clouds on the mountain",
+          7: "Game night",
+          8: "Sunset on the move",
+          9: "FC26, set piece",
+          10: "FC26, mid-match",
         }; // snap-N.mp4 (muted, compressed) with snap-N.jpg as its poster
         var count = 0;
         for (var i = 1; i <= 12; i++) {
           (function (n) {
             var fig = document.createElement("figure");
-            fig.hidden = true; fig.tabIndex = 0; fig.setAttribute("role", "button"); fig.setAttribute("aria-label", "Zoom snapshot " + n);
+            fig.hidden = true;
+            fig.tabIndex = 0;
+            fig.setAttribute("role", "button");
+            fig.setAttribute("aria-label", "Zoom snapshot " + n);
             var m;
             if (VIDEOS[n]) {
               m = document.createElement("video");
-              m.muted = true; m.loop = true; m.autoplay = true; m.playsInline = true; m.preload = "metadata";
-              m.setAttribute("muted", ""); m.setAttribute("playsinline", "");
+              m.muted = true;
+              m.loop = true;
+              m.autoplay = true;
+              m.playsInline = true;
+              m.preload = "metadata";
+              m.setAttribute("muted", "");
+              m.setAttribute("playsinline", "");
               m.poster = "Assets/images/snapshots/snap-" + n + ".jpg";
-              m.onloadeddata = function () { fig.hidden = false; count++; };
-              m.onerror = function () { fig.remove(); };
+              m.onloadeddata = function () {
+                fig.hidden = false;
+                count++;
+              };
+              m.onerror = function () {
+                fig.remove();
+              };
               m.src = "Assets/images/snapshots/snap-" + n + ".mp4";
             } else {
-              m = new Image(); m.alt = CAPTIONS[n] || "Snapshot " + n; m.loading = "eager";
-              m.onload = function () { fig.hidden = false; count++; };
-              m.onerror = function () { fig.remove(); };
+              m = new Image();
+              m.alt = CAPTIONS[n] || "Snapshot " + n;
+              m.loading = "eager";
+              m.onload = function () {
+                fig.hidden = false;
+                count++;
+              };
+              m.onerror = function () {
+                fig.remove();
+              };
               m.src = "Assets/images/snapshots/snap-" + n + ".jpg";
             }
             fig.appendChild(m);
-            var cap = document.createElement("figcaption"); cap.textContent = CAPTIONS[n] || ""; if (CAPTIONS[n]) fig.appendChild(cap);
+            var cap = document.createElement("figcaption");
+            cap.textContent = CAPTIONS[n] || "";
+            if (CAPTIONS[n]) fig.appendChild(cap);
             box.appendChild(fig);
           })(i);
         }
-        setTimeout(function () { if (!count) document.getElementById("snapshots").style.display = "none"; }, 2500);
+        setTimeout(function () {
+          if (!count)
+            document.getElementById("snapshots").style.display = "none";
+        }, 2500);
 
         // tap to zoom
         var lb = document.createElement("div");
-        lb.className = "lightbox"; lb.hidden = true; lb.setAttribute("role", "dialog"); lb.setAttribute("aria-modal", "true"); lb.setAttribute("aria-label", "Snapshot viewer");
-        lb.innerHTML = '<button class="lb-btn lb-close" aria-label="Close">&times;</button><button class="lb-btn lb-prev" aria-label="Previous">&larr;</button><div class="lb-stage"></div><button class="lb-btn lb-next" aria-label="Next">&rarr;</button><p class="lb-count mono"></p>';
+        lb.className = "lightbox";
+        lb.hidden = true;
+        lb.setAttribute("role", "dialog");
+        lb.setAttribute("aria-modal", "true");
+        lb.setAttribute("aria-label", "Snapshot viewer");
+        lb.innerHTML =
+          '<button class="lb-btn lb-close" aria-label="Close">&times;</button><button class="lb-btn lb-prev" aria-label="Previous">&larr;</button><div class="lb-stage"></div><button class="lb-btn lb-next" aria-label="Next">&rarr;</button><p class="lb-count mono"></p>';
         document.body.appendChild(lb);
-        var stage = lb.querySelector(".lb-stage"), counter = lb.querySelector(".lb-count"), cur = 0, lastFocus = null;
-        function items() { return [].slice.call(box.querySelectorAll("figure:not([hidden])")); }
+        var stage = lb.querySelector(".lb-stage"),
+          counter = lb.querySelector(".lb-count"),
+          cur = 0,
+          lastFocus = null;
+        function items() {
+          return [].slice.call(box.querySelectorAll("figure:not([hidden])"));
+        }
         function show(i) {
-          var list = items(); if (!list.length) return;
+          var list = items();
+          if (!list.length) return;
           cur = (i + list.length) % list.length;
-          var src = list[cur].querySelector("img, video"), el;
+          var src = list[cur].querySelector("img, video"),
+            el;
           if (src.tagName === "VIDEO") {
             el = document.createElement("video");
-            el.src = src.src; el.poster = src.poster; el.muted = true; el.loop = true; el.autoplay = true; el.playsInline = true; el.controls = false;
-          } else { el = new Image(); el.src = src.src; el.alt = src.alt; }
-          stage.innerHTML = ""; stage.appendChild(el);
-          var c = list[cur].querySelector("figcaption"); counter.textContent = (c ? c.textContent + "  ·  " : "") + (cur + 1) + " / " + list.length;
+            el.src = src.src;
+            el.poster = src.poster;
+            el.muted = true;
+            el.loop = true;
+            el.autoplay = true;
+            el.playsInline = true;
+            el.controls = false;
+          } else {
+            el = new Image();
+            el.src = src.src;
+            el.alt = src.alt;
+          }
+          stage.innerHTML = "";
+          stage.appendChild(el);
+          var c = list[cur].querySelector("figcaption");
+          counter.textContent =
+            (c ? c.textContent + "  ·  " : "") +
+            (cur + 1) +
+            " / " +
+            list.length;
         }
-        function open(i) { lastFocus = document.activeElement; lb.hidden = false; document.body.style.overflow = "hidden"; show(i); lb.querySelector(".lb-close").focus(); }
-        function close() { lb.hidden = true; stage.innerHTML = ""; document.body.style.overflow = ""; if (lastFocus) lastFocus.focus(); }
-        box.addEventListener("click", function (e) { var f = e.target.closest("figure"); if (f) open(items().indexOf(f)); });
-        box.addEventListener("keydown", function (e) { if ((e.key === "Enter" || e.key === " ") && e.target.matches("figure")) { e.preventDefault(); open(items().indexOf(e.target)); } });
+        function open(i) {
+          lastFocus = document.activeElement;
+          lb.hidden = false;
+          document.body.style.overflow = "hidden";
+          show(i);
+          lb.querySelector(".lb-close").focus();
+        }
+        function close() {
+          lb.hidden = true;
+          stage.innerHTML = "";
+          document.body.style.overflow = "";
+          if (lastFocus) lastFocus.focus();
+        }
+        box.addEventListener("click", function (e) {
+          var f = e.target.closest("figure");
+          if (f) open(items().indexOf(f));
+        });
+        box.addEventListener("keydown", function (e) {
+          if (
+            (e.key === "Enter" || e.key === " ") &&
+            e.target.matches("figure")
+          ) {
+            e.preventDefault();
+            open(items().indexOf(e.target));
+          }
+        });
         lb.addEventListener("click", function (e) {
           if (e.target.closest(".lb-prev")) show(cur - 1);
           else if (e.target.closest(".lb-next")) show(cur + 1);
-          else if (e.target.closest(".lb-close") || e.target === lb || e.target === stage) close();
+          else if (
+            e.target.closest(".lb-close") ||
+            e.target === lb ||
+            e.target === stage
+          )
+            close();
         });
         document.addEventListener("keydown", function (e) {
           if (lb.hidden) return;
-          if (e.key === "Escape") close(); else if (e.key === "ArrowLeft") show(cur - 1); else if (e.key === "ArrowRight") show(cur + 1);
+          if (e.key === "Escape") close();
+          else if (e.key === "ArrowLeft") show(cur - 1);
+          else if (e.key === "ArrowRight") show(cur + 1);
         });
         var sx = null;
-        lb.addEventListener("touchstart", function (e) { sx = e.touches[0].clientX; }, { passive: true });
-        lb.addEventListener("touchend", function (e) { if (sx === null) return; var dx = e.changedTouches[0].clientX - sx; sx = null; if (Math.abs(dx) > 50) show(cur + (dx < 0 ? 1 : -1)); });
+        lb.addEventListener(
+          "touchstart",
+          function (e) {
+            sx = e.touches[0].clientX;
+          },
+          { passive: true },
+        );
+        lb.addEventListener("touchend", function (e) {
+          if (sx === null) return;
+          var dx = e.changedTouches[0].clientX - sx;
+          sx = null;
+          if (Math.abs(dx) > 50) show(cur + (dx < 0 ? 1 : -1));
+        });
       })();
     </script>
-<script>
+    <script>
       (function () {
         var arena = document.getElementById("tool-arena");
-        if (!arena || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+        if (
+          !arena ||
+          window.matchMedia("(prefers-reduced-motion: reduce)").matches
+        )
+          return;
         var tools = [].slice.call(arena.querySelectorAll(".tool"));
-        var G = 800, REST = 0.4, AIR = 0.997, S, R, W, H, items = [], started = false, last = 0, drag = null;
+        var G = 800,
+          REST = 0.4,
+          AIR = 0.997,
+          S,
+          R,
+          W,
+          H,
+          items = [],
+          started = false,
+          last = 0,
+          drag = null;
 
         function measure() {
-          W = arena.clientWidth; H = arena.clientHeight;
-          S = tools[0].offsetWidth; R = S * 0.42;
+          W = arena.clientWidth;
+          H = arena.clientHeight;
+          S = tools[0].offsetWidth;
+          R = S * 0.42;
         }
         function setup() {
           arena.classList.add("physics");
           measure();
           items = tools.map(function (el, i) {
-            return { el: el, x: R + Math.random() * Math.max(1, W - 2 * R), y: -S * (i + 1) * 1.4, vx: (Math.random() - .5) * 120, vy: 0, a: Math.random() * 40 - 20, va: (Math.random() - .5) * 60 };
+            return {
+              el: el,
+              x: R + Math.random() * Math.max(1, W - 2 * R),
+              y: -S * (i + 1) * 1.4,
+              vx: (Math.random() - 0.5) * 120,
+              vy: 0,
+              a: Math.random() * 40 - 20,
+              va: (Math.random() - 0.5) * 60,
+            };
           });
         }
         function step(dt) {
@@ -235,72 +662,154 @@
           for (i = 0; i < items.length; i++) {
             p = items[i];
             if (p === drag) continue;
-            p.vy += G * dt; p.vx *= AIR; p.x += p.vx * dt; p.y += p.vy * dt; p.a += p.va * dt;
-            if (p.x < R) { p.x = R; p.vx = -p.vx * REST; }
-            if (p.x > W - R) { p.x = W - R; p.vx = -p.vx * REST; }
-            if (p.y > H - R) { p.y = H - R; p.vy = -p.vy * REST; p.vx *= 0.96; p.va = p.vx * 0.3; if (Math.abs(p.vy) < 40) p.vy = 0; }
-          }
-          for (i = 0; i < items.length; i++) for (j = i + 1; j < items.length; j++) {
-            p = items[i]; q = items[j];
-            var dx = q.x - p.x, dy = q.y - p.y, d = Math.sqrt(dx * dx + dy * dy), min = R * 2;
-            if (d > 0 && d < min) {
-              var nx = dx / d, ny = dy / d, o = (min - d) / 2;
-              if (p !== drag) { p.x -= nx * o; p.y -= ny * o; }
-              if (q !== drag) { q.x += nx * o; q.y += ny * o; }
-              var rv = (q.vx - p.vx) * nx + (q.vy - p.vy) * ny;
-              if (rv < 0) {
-                var imp = -(1 + REST) * rv / 2;
-                if (p !== drag) { p.vx -= imp * nx; p.vy -= imp * ny; }
-                if (q !== drag) { q.vx += imp * nx; q.vy += imp * ny; }
-              }
+            p.vy += G * dt;
+            p.vx *= AIR;
+            p.x += p.vx * dt;
+            p.y += p.vy * dt;
+            p.a += p.va * dt;
+            if (p.x < R) {
+              p.x = R;
+              p.vx = -p.vx * REST;
+            }
+            if (p.x > W - R) {
+              p.x = W - R;
+              p.vx = -p.vx * REST;
+            }
+            if (p.y > H - R) {
+              p.y = H - R;
+              p.vy = -p.vy * REST;
+              p.vx *= 0.96;
+              p.va = p.vx * 0.3;
+              if (Math.abs(p.vy) < 40) p.vy = 0;
             }
           }
+          for (i = 0; i < items.length; i++)
+            for (j = i + 1; j < items.length; j++) {
+              p = items[i];
+              q = items[j];
+              var dx = q.x - p.x,
+                dy = q.y - p.y,
+                d = Math.sqrt(dx * dx + dy * dy),
+                min = R * 2;
+              if (d > 0 && d < min) {
+                var nx = dx / d,
+                  ny = dy / d,
+                  o = (min - d) / 2;
+                if (p !== drag) {
+                  p.x -= nx * o;
+                  p.y -= ny * o;
+                }
+                if (q !== drag) {
+                  q.x += nx * o;
+                  q.y += ny * o;
+                }
+                var rv = (q.vx - p.vx) * nx + (q.vy - p.vy) * ny;
+                if (rv < 0) {
+                  var imp = (-(1 + REST) * rv) / 2;
+                  if (p !== drag) {
+                    p.vx -= imp * nx;
+                    p.vy -= imp * ny;
+                  }
+                  if (q !== drag) {
+                    q.vx += imp * nx;
+                    q.vy += imp * ny;
+                  }
+                }
+              }
+            }
         }
         function draw() {
           items.forEach(function (p) {
-            p.el.style.transform = "translate(" + (p.x - S / 2) + "px," + (p.y - S / 2) + "px) rotate(" + p.a + "deg)";
+            p.el.style.transform =
+              "translate(" +
+              (p.x - S / 2) +
+              "px," +
+              (p.y - S / 2) +
+              "px) rotate(" +
+              p.a +
+              "deg)";
           });
         }
         function loop(t) {
-          var dt = Math.min(0.033, (t - last) / 1000 || 0.016); last = t;
+          var dt = Math.min(0.033, (t - last) / 1000 || 0.016);
+          last = t;
           for (var k = 0; k < 2; k++) step(dt / 2);
-          draw(); requestAnimationFrame(loop);
+          draw();
+          requestAnimationFrame(loop);
         }
-        function pos(e) { var r = arena.getBoundingClientRect(); return { x: e.clientX - r.left, y: e.clientY - r.top }; }
+        function pos(e) {
+          var r = arena.getBoundingClientRect();
+          return { x: e.clientX - r.left, y: e.clientY - r.top };
+        }
         arena.addEventListener("pointerdown", function (e) {
-          var el = e.target.closest(".tool"); if (!el) return;
-          var p = items.filter(function (it) { return it.el === el; })[0], c = pos(e);
-          drag = p; p.ox = p.x - c.x; p.oy = p.y - c.y; p.vx = p.vy = 0; p.lx = c.x; p.ly = c.y; p.lt = performance.now();
-          el.setPointerCapture(e.pointerId); el.classList.add("grabbing"); e.preventDefault();
+          var el = e.target.closest(".tool");
+          if (!el) return;
+          var p = items.filter(function (it) {
+              return it.el === el;
+            })[0],
+            c = pos(e);
+          drag = p;
+          p.ox = p.x - c.x;
+          p.oy = p.y - c.y;
+          p.vx = p.vy = 0;
+          p.lx = c.x;
+          p.ly = c.y;
+          p.lt = performance.now();
+          el.setPointerCapture(e.pointerId);
+          el.classList.add("grabbing");
+          e.preventDefault();
         });
         arena.addEventListener("pointermove", function (e) {
           if (!drag) return;
-          var c = pos(e), now = performance.now(), dt = Math.max(1, now - drag.lt) / 1000;
-          drag.vx = (c.x - drag.lx) / dt; drag.vy = (c.y - drag.ly) / dt;
-          drag.lx = c.x; drag.ly = c.y; drag.lt = now;
-          drag.x = Math.min(W - R, Math.max(R, c.x + drag.ox)); drag.y = Math.min(H - R, Math.max(R, c.y + drag.oy));
+          var c = pos(e),
+            now = performance.now(),
+            dt = Math.max(1, now - drag.lt) / 1000;
+          drag.vx = (c.x - drag.lx) / dt;
+          drag.vy = (c.y - drag.ly) / dt;
+          drag.lx = c.x;
+          drag.ly = c.y;
+          drag.lt = now;
+          drag.x = Math.min(W - R, Math.max(R, c.x + drag.ox));
+          drag.y = Math.min(H - R, Math.max(R, c.y + drag.oy));
         });
         function release() {
           if (!drag) return;
           drag.el.classList.remove("grabbing");
-          drag.vx = Math.max(-1000, Math.min(1000, drag.vx)); drag.vy = Math.max(-1000, Math.min(1000, drag.vy));
-          drag.va = drag.vx * 0.15; drag = null;
+          drag.vx = Math.max(-1000, Math.min(1000, drag.vx));
+          drag.vy = Math.max(-1000, Math.min(1000, drag.vy));
+          drag.va = drag.vx * 0.15;
+          drag = null;
         }
-        arena.addEventListener("pointerup", release); arena.addEventListener("pointercancel", release);
-        window.addEventListener("resize", function () { if (started) measure(); });
+        arena.addEventListener("pointerup", release);
+        arena.addEventListener("pointercancel", release);
+        window.addEventListener("resize", function () {
+          if (started) measure();
+        });
 
-        new IntersectionObserver(function (entries, obs) {
-          if (entries[0].isIntersecting && !started) { started = true; setup(); requestAnimationFrame(loop); obs.disconnect(); }
-        }, { threshold: 0.35 }).observe(arena);
+        new IntersectionObserver(
+          function (entries, obs) {
+            if (entries[0].isIntersecting && !started) {
+              started = true;
+              setup();
+              requestAnimationFrame(loop);
+              obs.disconnect();
+            }
+          },
+          { threshold: 0.35 },
+        ).observe(arena);
       })();
     </script>
-<script>
-      document.getElementById("theme-toggle").addEventListener("click", function () {
-        var root = document.documentElement;
-        var next = root.dataset.theme === "dark" ? "light" : "dark";
-        root.dataset.theme = next;
-        try { localStorage.setItem("theme", next); } catch (e) {}
-      });
+    <script>
+      document
+        .getElementById("theme-toggle")
+        .addEventListener("click", function () {
+          var root = document.documentElement;
+          var next = root.dataset.theme === "dark" ? "light" : "dark";
+          root.dataset.theme = next;
+          try {
+            localStorage.setItem("theme", next);
+          } catch (e) {}
+        });
     </script>
     <script src="Assets/Js/site.js?v=20261029e"></script>
   </body>
