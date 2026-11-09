@@ -89,7 +89,7 @@ function ragebaitTaunt() {
   session.lastStyle = si;
   const st = TAUNT_STYLES[si], card = $('.result-card');
   // The laugh gets longer and louder the more you lose.
-  const ha = Array.from({ length: Math.min(2 + n, 7) }, (_, i) => (i % 2 ? 'HA' : 'HA')).join(' ') + '!';
+  const ha = Array(Math.min(2 + n, 7)).fill('HA').join(' ') + '!';
   card.dataset.anim = st.anim;
   card.style.background = st.bg; card.style.borderColor = st.fg; card.style.color = st.fg;
   card.style.setProperty('--tilt', rand(-4, 4).toFixed(1) + 'deg');
